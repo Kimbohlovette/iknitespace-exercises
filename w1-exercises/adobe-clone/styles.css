@@ -57,7 +57,27 @@ button {
     font-weight: 600;
 }
 
+.grid-container .card ul li {
+    padding: 16px 0px;
+    font-size: small;
+    font-weight: 500;
+}
 
+.grid-container .card h3 {
+	padding: 12px 0px;
+    font-size: 24px;
+}
+
+.grid-container .card h2 {
+	padding: 16px 0px 6px 0px;
+}
+
+
+.grid-container .card img {
+	width: auto;
+    height: 250px;
+    margin-top: 4rem;
+}
 
 /*--------------#header---------------------*/
 header {
@@ -181,6 +201,11 @@ header .signup a {
     font-weight: 600;
 }
 
+.creative-cloud-for a {
+    color: blue;
+    letter-spacing: 1px;
+}
+
 .creative-cloud-for {
     width: 100%;
    display: flex;
@@ -244,22 +269,6 @@ header .signup a {
 
 /*--------------#adobe-tools---------------------*/
 
-#adobe-tools .card h2 {
-	padding: 16px 0px 6px 0px;
-}
-
-#adobe-tools .card h3 {
-	padding: 12px 0px;
-    font-size: 24px;
-}
-
-#adobe-tools .card img {
-	width: auto;
-    height: 250px;
-    margin-top: 4rem;
-}
-
-
 
 #adobe-tools .grid-container .card:nth-child(1) {
     background-image: linear-gradient( rgb(255, 196, 196), red);
@@ -279,11 +288,7 @@ header .signup a {
 #adobe-tools .grid-container .card:nth-child(3) h2 {
     border-bottom: 1px solid white;
 }
-#adobe-tools .grid-container .card:nth-child(3) ul li {
-    padding: 16px 0px;
-    font-size: small;
-    font-weight: 500;
-}
+
 #adobe-tools .grid-container .card:nth-child(4) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -328,4 +333,25 @@ header .signup a {
 }
 
 
-/*--------------#adobe-products---------------------*/
+/*--------------#adobe-services---------------------*/
+
+
+#adobe-services .card:nth-of-type(3) {
+    background-color: #66cccc;
+}
+
+#adobe-services .card:nth-child(1){
+    background-image: url(./assets/EML-homepage-single-desktop-1_v2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#adobe-services .card:nth-child(2){
+    background-image: url(./assets/EML-homepage-single-desktop-2_v2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#adobe-services .card:nth-of-type(3) h2 {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    
+}
