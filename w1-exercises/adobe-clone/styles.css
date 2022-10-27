@@ -23,7 +23,7 @@ p {
     line-height: 1.5;
 }
 
-section {
+section, footer{
 	margin: 24px 0px;
     padding: 36px;
 }
@@ -351,7 +351,97 @@ header .signup a {
     background-size: cover;
 }
 #adobe-services .card:nth-of-type(3) h2 {
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    
+    border-bottom: 1px solid black; 
 }
+
+
+/*-------------- footer---------------------*/
+
+footer{
+    background-color: #fafafafa;
+    color: #505050;
+}
+
+footer h3 {
+    font-size: 14;
+    padding: 8px 0px;
+}
+
+footer nav>ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+footer nav ul li {
+    padding: 6px 0px;
+}
+footer a {
+    text-decoration: none !important;
+    font-size: x-small;
+    font-weight: 100;
+
+}
+footer a:hover {
+    color:gray;
+}
+
+
+footer .sight-map,footer .feature-products, footer .copyright {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+footer .feature-products {
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    column-gap: 28px;
+}
+
+footer .feature-products ul {
+    display: flex;
+    flex-direction: start;
+    column-gap: 2rem;
+}
+
+footer .feature-products ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: small;
+}
+
+
+footer .feature-products ul li img {
+    height: 24px;
+    width: auto;
+    margin-right: 4px;
+}
+
+footer .copyright li {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+}
+
+footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer .social-icons img {
+    height: 20px;
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
