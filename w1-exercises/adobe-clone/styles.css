@@ -19,6 +19,10 @@ a:hover {
 	text-decoration:underline;
 }
 
+p {
+    line-height: 1.5;
+}
+
 section {
 	margin: 24px 0px;
     padding: 36px;
@@ -114,6 +118,59 @@ header .signup a {
 	font-size: small;
 	font-weight: 400;
 }
+
+/*-------------- adobe-creative-cloud ----------------------*/
+
+.adobe-creative-cloud {
+    height: 100vh;
+    background: linear-gradient(217deg, rgb(178, 247, 99), rgba(255,0,0,0) 60.71%),
+            linear-gradient(135deg, red, rgba(0,255,0,0) 88.71%),
+            linear-gradient(to top left, rgb(114, 123, 248) , rgba(0,0,255,0) 100%);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.adobe-creative-cloud div:last-child {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adobe-creative-cloud div {
+    width: 50%;
+    padding: 0px 24px;
+}
+
+.adobe-creative-cloud div img {
+    width: auto;
+    height: 400px;
+}
+
+
+.adobe-creative-cloud div h1 {
+    font-size: xx-large;
+    padding: 16px 0px;
+}
+
+.adobe-creative-cloud div p {
+    padding: 16px 0px;
+}
+.adobe-creative-cloud div button {
+    background-color: blue;
+    color: white;
+    font-size: small;
+    font-weight: 600;
+    margin: 8px;
+}
+.adobe-creative-cloud div a {
+    font-size: small;
+    font-weight: 800;
+    margin: 8px;
+}
+
 /*--------------#home---------------------*/
 
 #home {
