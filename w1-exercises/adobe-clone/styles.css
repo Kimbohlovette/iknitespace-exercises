@@ -139,6 +139,26 @@ header .signup a {
 	font-weight: 400;
 }
 
+/*-------------- adobe-products-cloud ----------------------*/
+
+#adobe-products .card:nth-child(1){
+    background-image: url(./assets/PS-campaign-homepage-single-desktop_v6.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#adobe-products .card:nth-child(2){
+    background-image: url(./assets/AX-2022-single-desktop-v2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#adobe-products .card:nth-child(3) {
+    background-color: rgba(35, 126, 161, 0.603);
+}
+
+
 /*-------------- adobe-creative-cloud ----------------------*/
 
 .adobe-creative-cloud {
