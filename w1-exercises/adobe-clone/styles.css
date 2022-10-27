@@ -133,7 +133,7 @@ header .signup a {
     align-items: center;
 }
 
-.adobe-creative-cloud div:last-child {
+.adobe-creative-cloud  div:last-child {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -169,6 +169,27 @@ header .signup a {
     font-size: small;
     font-weight: 800;
     margin: 8px;
+}
+
+/*--------------#creative-space-for ---------------------*/
+
+.creative-cloud-for>span, .creative-cloud-for>a {
+    display: block;
+}
+
+.creative-cloud-for span {
+    font-weight: 600;
+}
+
+.creative-cloud-for {
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 24px;
+   border-bottom: 1px solid lightgray;
+    padding: 24px 0px;
+   margin-bottom: 40px;
 }
 
 /*--------------#home---------------------*/
