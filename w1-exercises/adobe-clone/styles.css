@@ -1,4 +1,4 @@
-/* Reset css default styles*/
+/* Application's default styles*/
 
 * {
 	margin: 0;
@@ -10,7 +10,7 @@
 	overflow-x: hidden;
 }
 
-* a {
+ a {
 	text-decoration: none;
     color: #000000;
 }
@@ -95,6 +95,7 @@ header .brand {
 	color: red;
 	font-weight: 600;
 }
+
 header .brand svg {
 	font-size: 40px;
 }
@@ -192,13 +193,13 @@ header .signup a {
     align-items: center;
 }
 
-.adobe-creative-cloud  div:last-child {
+.adobe-creative-cloud  .adobe-creative-cloud-image {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.adobe-creative-cloud div {
+.adobe-creative-cloud .adobe-creative-cloud-text {
     width: 50%;
     padding: 0px 24px;
 }
@@ -485,140 +486,75 @@ footer .social-icons img {
     .grid-container {
         display: grid;
         grid-template-columns: 100%;
-        gap: 40px;
+        row-gap: 40px;
     }
 
-        /*-------------- adobe-products-cloud ----------------------*/
-
-
-    /*-------------- adobe-creative-cloud ----------------------*/
-
-    .adobe-creative-cloud {
-        height: 100vh;
-        background-image: url(./assets/DX-Marquee-triple-tablet.jpeg);
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .adobe-creative-cloud  div:last-child {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .adobe-creative-cloud div {
-        width: 50%;
-        padding: 0px 24px;
-    }
-
-    .adobe-creative-cloud div img {
-        width: auto;
-        height: 400px;
-    }
-
-
-    .adobe-creative-cloud div h1 {
-        font-size: xx-large;
-        padding: 16px 0px;
-    }
-
-    .adobe-creative-cloud div p {
-        padding: 16px 0px;
-    }
-    .adobe-creative-cloud div button {
-        background-color: blue;
-        color: white;
-        font-size: small;
-        font-weight: 600;
-        margin: 8px;
-    }
-    .adobe-creative-cloud div a {
-        font-size: small;
-        font-weight: 800;
-        margin: 8px;
+    .grid-container .card {
+        padding: 40px;
     }
 
     /*--------------#creative-cloud-for ---------------------*/
 
-    .creative-cloud-for>span, .creative-cloud-for>a {
-        display: block;
-    }
 
-    .creative-cloud-for span {
-        font-weight: 600;
-    }
 
-    .creative-cloud-for a {
-        color: blue;
-        letter-spacing: 1px;
-    }
 
     .creative-cloud-for {
         width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction:column;
     gap: 24px;
     border-bottom: 1px solid lightgray;
         padding: 24px 0px;
     margin-bottom: 40px;
     }
 
-    /*--------------#home---------------------*/
+    .creative-cloud-for div a{
+        padding: 0px 16px;
+    }
 
-    #home {
-        position: relative;
-        margin-top: -8px;
-        height: 70vh;
-        width: auto;
-        background-image: url(https://s7d1.scene7.com/is/image/TitanProd/EML-Got-It_triple-desktop?$pjpeg$&jpegSize=300&wid=1920);
-        background-position-x:center;
+
+    /*-------------- adobe-creative-cloud ----------------------*/
+
+    .adobe-creative-cloud {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        background:none;
+        justify-content: baseline;
+        align-items: baseline;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .adobe-creative-cloud .adobe-creative-cloud-image {
+        display: block;
+        background-image: url(./assets/CC-MAX-triple-tablet.jpeg);
+        background-position:center;
         background-size: cover;
         background-repeat: no-repeat;
+        height: 100vh;
+        width: 100% !important;
     }
 
-    #home .caption {
-        position: absolute;
-        top: 30%;
-        right: 10%;
-        color: white;
-        max-width: 400px;
+    .adobe-creative-cloud .adobe-creative-cloud-image img {
+        display: none;
     }
 
-    #home .caption h1 {
-        font-size: 45px;
+    .adobe-creative-cloud .adobe-creative-cloud-text {
+        overflow: visible;
+        padding: 40px;
+    }
+
+    adobe-creative-cloud div h1 {
         padding: 16px 0px;
     }
 
-    #home .caption p {
-        color: whitesmoke;
-        padding: 8px 0px;
+    .adobe-creative-cloud div p {
+        padding: 16px 0px;
     }
-
-    #home .plans-btn-group {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: 24px;
-        padding: 8px 0px;
-    }
-
-    #home .caption button {
-        color: white;
-        font-weight: 600;
-        background-color: blue;
-        font-size: small;
-    }
-
-    #home .caption a {
-        color: white;
-        font-weight: 600;
-        font-size: small;
-    }
-
+   
     /*--------------#adobe-tools---------------------*/
 
 
