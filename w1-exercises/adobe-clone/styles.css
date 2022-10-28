@@ -19,7 +19,11 @@ a:hover {
 	text-decoration:underline;
 }
 
-section {
+p {
+    line-height: 1.5;
+}
+
+section, footer{
 	margin: 24px 0px;
     padding: 36px;
 }
@@ -53,7 +57,27 @@ button {
     font-weight: 600;
 }
 
+.grid-container .card ul li {
+    padding: 16px 0px;
+    font-size: small;
+    font-weight: 500;
+}
 
+.grid-container .card h3 {
+	padding: 12px 0px;
+    font-size: 24px;
+}
+
+.grid-container .card h2 {
+	padding: 16px 0px 6px 0px;
+}
+
+
+.grid-container .card img {
+	width: auto;
+    height: 250px;
+    margin-top: 4rem;
+}
 
 /*--------------#header---------------------*/
 header {
@@ -114,16 +138,104 @@ header .signup a {
 	font-size: small;
 	font-weight: 400;
 }
-/*--------------#adobe-creative-cloud ---------------------*/
 
-.adobe-creative-cloud {
-	height: 70vh;
-	background: linear-gradient(217deg, yellow, rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg,red, rgba(0,255,0,0) 70.71%),
-			linear-gradient(127deg, yellow, rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgb(0, 115, 255), rgba(0,0,255,0) 50.71%);
+/*-------------- adobe-products-cloud ----------------------*/
+
+#adobe-products .card:nth-child(1){
+    background-image: url(./assets/PS-campaign-homepage-single-desktop_v6.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#adobe-products .card:nth-child(2){
+    background-image: url(./assets/AX-2022-single-desktop-v2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+#adobe-products .card:nth-child(3) {
+    background-color: rgba(35, 126, 161, 0.603);
+}
+
+
+/*-------------- adobe-creative-cloud ----------------------*/
+
+.adobe-creative-cloud {
+    height: 100vh;
+    background: linear-gradient(217deg, rgb(178, 247, 99), rgba(255,0,0,0) 60.71%),
+            linear-gradient(135deg, red, rgba(0,255,0,0) 88.71%),
+            linear-gradient(to top left, rgb(114, 123, 248) , rgba(0,0,255,0) 100%);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.adobe-creative-cloud  div:last-child {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adobe-creative-cloud div {
+    width: 50%;
+    padding: 0px 24px;
+}
+
+.adobe-creative-cloud div img {
+    width: auto;
+    height: 400px;
+}
+
+
+.adobe-creative-cloud div h1 {
+    font-size: xx-large;
+    padding: 16px 0px;
+}
+
+.adobe-creative-cloud div p {
+    padding: 16px 0px;
+}
+.adobe-creative-cloud div button {
+    background-color: blue;
+    color: white;
+    font-size: small;
+    font-weight: 600;
+    margin: 8px;
+}
+.adobe-creative-cloud div a {
+    font-size: small;
+    font-weight: 800;
+    margin: 8px;
+}
+
+/*--------------#creative-space-for ---------------------*/
+
+.creative-cloud-for>span, .creative-cloud-for>a {
+    display: block;
+}
+
+.creative-cloud-for span {
+    font-weight: 600;
+}
+
+.creative-cloud-for a {
+    color: blue;
+    letter-spacing: 1px;
+}
+
+.creative-cloud-for {
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 24px;
+   border-bottom: 1px solid lightgray;
+    padding: 24px 0px;
+   margin-bottom: 40px;
+}
 
 /*--------------#home---------------------*/
 
@@ -179,22 +291,6 @@ header .signup a {
 
 /*--------------#adobe-tools---------------------*/
 
-#adobe-tools .card h2 {
-	padding: 16px 0px 6px 0px;
-}
-
-#adobe-tools .card h3 {
-	padding: 12px 0px;
-    font-size: 24px;
-}
-
-#adobe-tools .card img {
-	width: auto;
-    height: 250px;
-    margin-top: 4rem;
-}
-
-
 
 #adobe-tools .grid-container .card:nth-child(1) {
     background-image: linear-gradient( rgb(255, 196, 196), red);
@@ -214,11 +310,7 @@ header .signup a {
 #adobe-tools .grid-container .card:nth-child(3) h2 {
     border-bottom: 1px solid white;
 }
-#adobe-tools .grid-container .card:nth-child(3) ul li {
-    padding: 16px 0px;
-    font-size: small;
-    font-weight: 500;
-}
+
 #adobe-tools .grid-container .card:nth-child(4) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -264,4 +356,115 @@ header .signup a {
 }
 
 
-/*--------------#adobe-products---------------------*/
+/*--------------#adobe-services---------------------*/
+
+
+#adobe-services .card:nth-of-type(3) {
+    background-color: #66cccc;
+}
+
+#adobe-services .card:nth-child(1){
+    background-image: url(./assets/EML-homepage-single-desktop-1_v2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#adobe-services .card:nth-child(2){
+    background-image: url(./assets/EML-homepage-single-desktop-2_v2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#adobe-services .card:nth-of-type(3) h2 {
+    border-bottom: 1px solid black; 
+}
+
+
+/*-------------- footer---------------------*/
+
+footer{
+    background-color: #fafafafa;
+    color: #505050;
+}
+
+footer h3 {
+    font-size: 14;
+    padding: 8px 0px;
+}
+
+footer nav>ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+footer nav ul li {
+    padding: 6px 0px;
+}
+footer a {
+    text-decoration: none !important;
+    font-size: x-small;
+    font-weight: 100;
+
+}
+footer a:hover {
+    color:gray;
+}
+
+
+footer .sight-map,footer .feature-products, footer .copyright {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+footer .feature-products {
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    column-gap: 28px;
+}
+
+footer .feature-products ul {
+    display: flex;
+    flex-direction: start;
+    column-gap: 2rem;
+}
+
+footer .feature-products ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: small;
+}
+
+
+footer .feature-products ul li img {
+    height: 24px;
+    width: auto;
+    margin-right: 4px;
+}
+
+footer .copyright li {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+}
+
+footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer .social-icons img {
+    height: 20px;
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
