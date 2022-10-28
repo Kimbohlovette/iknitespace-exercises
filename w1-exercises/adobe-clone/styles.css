@@ -41,6 +41,7 @@ button {
 	gap: 40px;
 }
 
+
 .grid-container .card {
 	min-height: 500px;
 	width: auto;
@@ -159,6 +160,24 @@ header .signup a {
 }
 
 
+#adobe-products .grid-container .card:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #e8e8e8;
+    background-image: url(./assets/Premiere-Pro-double-desktop.jpeg);
+    background-position:center;
+    background-size: cover;
+}
+
+#adobe-products .card:nth-child(5) {
+    background-image: url(./assets/Homepage.Acrobat_powerhouse_pod.background.420x500.jpg.img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
 /*-------------- adobe-creative-cloud ----------------------*/
 
 .adobe-creative-cloud {
@@ -211,7 +230,7 @@ header .signup a {
     margin: 8px;
 }
 
-/*--------------#creative-space-for ---------------------*/
+/*--------------#creative-cloud-for ---------------------*/
 
 .creative-cloud-for>span, .creative-cloud-for>a {
     display: block;
@@ -310,16 +329,6 @@ header .signup a {
 #adobe-tools .grid-container .card:nth-child(3) h2 {
     border-bottom: 1px solid white;
 }
-
-#adobe-tools .grid-container .card:nth-child(4) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: #e8e8e8;
-    background-image: url(./assets/Premiere-Pro-double-desktop.jpeg);
-    background-position:center;
-    background-size: cover;
-}
-
 
 
 /*--------------#adobe-cloud ----------------------*/
@@ -465,6 +474,318 @@ footer .social-icons img {
     width: auto;
     margin-left: 8px;
     margin-right: 8px;
+}
+
+/* ==================================================*/
+/* CSS code at 1200px media query breakpoint */
+/*====================================================*/
+
+
+@media(max-width: 1200px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 40px;
+    }
+
+        /*-------------- adobe-products-cloud ----------------------*/
+
+
+    /*-------------- adobe-creative-cloud ----------------------*/
+
+    .adobe-creative-cloud {
+        height: 100vh;
+        background-image: url(./assets/DX-Marquee-triple-tablet.jpeg);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .adobe-creative-cloud  div:last-child {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .adobe-creative-cloud div {
+        width: 50%;
+        padding: 0px 24px;
+    }
+
+    .adobe-creative-cloud div img {
+        width: auto;
+        height: 400px;
+    }
+
+
+    .adobe-creative-cloud div h1 {
+        font-size: xx-large;
+        padding: 16px 0px;
+    }
+
+    .adobe-creative-cloud div p {
+        padding: 16px 0px;
+    }
+    .adobe-creative-cloud div button {
+        background-color: blue;
+        color: white;
+        font-size: small;
+        font-weight: 600;
+        margin: 8px;
+    }
+    .adobe-creative-cloud div a {
+        font-size: small;
+        font-weight: 800;
+        margin: 8px;
+    }
+
+    /*--------------#creative-cloud-for ---------------------*/
+
+    .creative-cloud-for>span, .creative-cloud-for>a {
+        display: block;
+    }
+
+    .creative-cloud-for span {
+        font-weight: 600;
+    }
+
+    .creative-cloud-for a {
+        color: blue;
+        letter-spacing: 1px;
+    }
+
+    .creative-cloud-for {
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid lightgray;
+        padding: 24px 0px;
+    margin-bottom: 40px;
+    }
+
+    /*--------------#home---------------------*/
+
+    #home {
+        position: relative;
+        margin-top: -8px;
+        height: 70vh;
+        width: auto;
+        background-image: url(https://s7d1.scene7.com/is/image/TitanProd/EML-Got-It_triple-desktop?$pjpeg$&jpegSize=300&wid=1920);
+        background-position-x:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #home .caption {
+        position: absolute;
+        top: 30%;
+        right: 10%;
+        color: white;
+        max-width: 400px;
+    }
+
+    #home .caption h1 {
+        font-size: 45px;
+        padding: 16px 0px;
+    }
+
+    #home .caption p {
+        color: whitesmoke;
+        padding: 8px 0px;
+    }
+
+    #home .plans-btn-group {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 24px;
+        padding: 8px 0px;
+    }
+
+    #home .caption button {
+        color: white;
+        font-weight: 600;
+        background-color: blue;
+        font-size: small;
+    }
+
+    #home .caption a {
+        color: white;
+        font-weight: 600;
+        font-size: small;
+    }
+
+    /*--------------#adobe-tools---------------------*/
+
+
+    #adobe-tools .grid-container .card:nth-child(1) {
+        background-image: linear-gradient( rgb(255, 196, 196), red);
+    }
+    #adobe-tools .grid-container .card:nth-child(3) {
+        background-color:#000000;
+        color: white;
+    }
+    #adobe-tools .grid-container .card:nth-child(2) {
+        background-color:red;
+        color: white;
+    }
+
+    #adobe-tools .grid-container .card:nth-child(3) p {
+        font-size: small;
+    }
+    #adobe-tools .grid-container .card:nth-child(3) h2 {
+        border-bottom: 1px solid white;
+    }
+
+
+    /*--------------#adobe-cloud ----------------------*/
+
+    #adobe-cloud {
+        display: flex;
+        background-color: red;
+        background-image: url(./assets/DX-Marquee-triple-desktop.jpeg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        color: white;
+
+    }
+
+    #adobe-cloud h2 {
+        padding: 16px 0;
+    }
+    #adobe-cloud h1 {
+        padding: 24px 0;
+        font-size: xxx-large;
+    }
+    #adobe-cloud p {
+        padding: 16px 0;
+    }
+
+
+    #adobe-cloud button {
+    background-color: blue;
+    color: white;
+    margin: 8px 0px;
+    font-size: small;
+    }
+
+
+    /*--------------#adobe-services---------------------*/
+
+
+    #adobe-services .card:nth-of-type(3) {
+        background-color: #66cccc;
+    }
+
+    #adobe-services .card:nth-child(1){
+        background-image: url(./assets/EML-homepage-single-desktop-1_v2.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
+    #adobe-services .card:nth-child(2){
+        background-image: url(./assets/EML-homepage-single-desktop-2_v2.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
+    #adobe-services .card:nth-of-type(3) h2 {
+        border-bottom: 1px solid black; 
+    }
+
+
+    /*-------------- footer---------------------*/
+
+    footer{
+        background-color: #fafafafa;
+        color: #505050;
+    }
+
+    footer h3 {
+        font-size: 14;
+        padding: 8px 0px;
+    }
+
+    footer nav>ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    footer nav ul li {
+        padding: 6px 0px;
+    }
+    footer a {
+        text-decoration: none !important;
+        font-size: x-small;
+        font-weight: 100;
+
+    }
+    footer a:hover {
+        color:gray;
+    }
+
+
+    footer .sight-map,footer .feature-products, footer .copyright {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+    footer .feature-products {
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        column-gap: 28px;
+    }
+
+    footer .feature-products ul {
+        display: flex;
+        flex-direction: start;
+        column-gap: 2rem;
+    }
+
+    footer .feature-products ul li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: small;
+    }
+
+
+    footer .feature-products ul li img {
+        height: 24px;
+        width: auto;
+        margin-right: 4px;
+    }
+
+    footer .copyright li {
+        display: flex;
+        flex-direction: row;
+        column-gap: 24px;
+    }
+
+    footer .social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    footer .social-icons img {
+        height: 20px;
+        width: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 }
 
 
