@@ -227,12 +227,10 @@ header .navItem:hover {
 #services .card {
     padding: 1.5rem;
     border-radius:0.75rem;
+}
+#services .card:hover {
     background-color: white;
     box-shadow: 0.125rem 0.125rem 0.5rem 0.125rem rgb(0, 0, 0, 0.22);
-}
-
-#services .card:hover {
-    transform: scale(1.02);
 }
 
 #services .icon {
