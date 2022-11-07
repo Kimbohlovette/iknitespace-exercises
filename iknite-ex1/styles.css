@@ -1,0 +1,345 @@
+
+
+*{
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body {
+    color: black;
+    background-color: white;
+}
+
+p, .navItem, .btn {
+    font-size: clamp(1.0rem, 0.5rem + 0.75vw, 1.75rem);
+}
+
+.btn {
+    padding-inline:1rem;
+    padding-block: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-primary {
+    border-radius: 1rem;
+    background-color: blue;
+    color: white;
+
+}
+
+.btn-primary:hover {
+    background-color: rgb(2, 2, 165);
+}
+
+.container {
+    inline-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    inline-size: 100%;
+    margin-inline: 1rem;
+}
+
+/*===================== header ==========================*/
+
+header {
+    display: flex;
+    inline-size: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 0;
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+}
+
+header .brand {
+    font-size: xx-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+header .brand .dot {
+    color: #f8b283;
+    font-size: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   column-gap: 1.5rem;
+   color: #413f3f;
+}
+
+header .navbar-mobile, .navbar-collapse {
+    display: none;
+}
+
+
+
+
+header #toggler:checked ~ .navbar-collapse{
+    display: block;
+}
+
+.navbar-collapse {
+    position: fixed;
+    inset-block-start:0;
+    inset-inline-end: 0.25rem;
+    background-color: white;
+    z-index: 15;
+    box-shadow: 2px 2px 6px 1px lightgray;
+    padding-block: 2rem;
+    width: 75%;
+  
+}
+
+
+header .close-container {
+    inline-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+header .nav-menu {
+    padding: 0.5rem 1rem;
+    background-color: #e8eff7;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+header .close {
+    padding:16px 2.5rem;
+}
+
+
+header .navbar-mobile #toggler {
+    opacity: 0;
+}
+
+
+header .navItem {
+    cursor: pointer;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+}
+
+
+header .navbar .navItem:first-child {
+    font-weight: bold;
+}
+
+header .navItem:hover {
+    background-color: #e8eff7;
+}
+
+/* ================= home ===================*/
+
+#home {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    width: 100%;
+}
+
+#home .home-text-container h1 {
+    font-size: clamp(0.75rem, 1.4rem + 1.5vw, 5rem);
+    padding-block: 8px;
+    animation: fadeIn 7s ease-in;
+}
+
+#home .home-text-container h2 {
+    padding-block: 8px;
+
+}
+#home .home-text-container{
+    flex: 1
+}
+
+#home .home-text-container h2 .dash{
+    font-size: 3rem;
+    font-weight: lighter;
+    color: gray;
+}
+
+#home .home-text-container h2 .what-we-do {
+    font-size: 1.5em;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    font-weight: lighter;
+    color: #f57c8a;
+}
+#home .home-text-container p {
+    max-inline-size: 80%;
+    line-height: 1.5;
+}
+
+
+#home .home-image-container img{
+    margin: auto;
+    transition: transform 2s;
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: cover;
+}
+
+#home .home-image-container img:hover {
+    transform: scale(1.05);
+}
+#home .home-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .btn {
+    margin-block: 1rem;
+}
+
+/*=============== services =======================*/
+
+#services {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    background-color: #f3f5f7;
+    border-radius: 1.25rem;
+    grid-gap: 1.5rem;
+    width: 100%;
+}
+
+#services .card {
+    padding: 1.5rem;
+    border-radius:0.75rem;
+    background-color: white;
+    box-shadow: 0.125rem 0.125rem 0.5rem 0.125rem rgb(0, 0, 0, 0.22);
+}
+
+#services .card:hover {
+    transform: scale(1.02);
+}
+
+#services .icon {
+    padding: 0.25rem;
+    width: auto;
+    height: 3rem;
+}
+
+#services h4 {
+    padding-block: 0.75rem;
+    font-size: 1rem;
+}
+
+#services p {
+    padding-block: 0.25rem;
+    font-weight: 100;
+}
+
+#services .btn-studio {
+    border-radius: 2rem;
+    background-color: green;
+    color: white;
+}
+
+#services .btn-studio:hover {
+   background-color: rgb(2, 87, 2);
+}
+#services .btn-pro {
+    border-radius: 2rem;
+    background-color: #f3f5f7;
+}
+
+#services .card:first-child .btn-studio {
+    background-color: #ff6600;
+}
+
+#services .card:first-child .btn-studio:hover {
+    background-color: #a15f33;
+}
+
+
+
+/*======================= @media-query(max-width: 2024px) ========================*/
+
+@media (max-width: 90.25rem) {
+
+    .container {
+        padding: 0px 4rem;
+    }
+}
+
+
+@media (max-width: 64rem) {
+
+    #home .home-text-container h1, 
+    #home .home-text-container h2, 
+    #home .home-text-container p {
+        max-inline-size: 100%;
+        line-height: 1.5;
+    }
+    
+}
+
+
+@media (max-width: 48rem) {
+    .container {
+        padding-inline: 2rem;
+    }
+
+    header .navbar-mobile{
+        display: block;
+    }
+
+    .navbar-desktop, .login-btn {
+        display: none;
+    }
+}
+
+
+@media (max-width: 425px) {
+    header .navbar-collapse{
+        inline-size: 100%;
+    }
+    nav{
+        display: none;
+    }
+
+    .container {
+        padding-inline: 0.25rem;
+    }
+}
+
+
+/* ============================== @keyframes =====================================*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
