@@ -46,10 +46,8 @@ p, .navItem, .btn {
 }
 
 section{
-    padding-inline: 2rem;
     padding-block: 2rem;
     inline-size: 100%;
-    margin-inline: 1rem;
 }
 
 /*===================== header ==========================*/
@@ -83,7 +81,10 @@ header .navbar {
    column-gap: 1.5rem;
    color: #413f3f;
 }
-
+section{
+    padding-block: 2rem;
+    inline-size: 100%;
+}
 header .navbar-mobile, .navbar-collapse {
     display: none;
 }
@@ -220,6 +221,7 @@ header .navItem:hover {
     border-radius: 1.25rem;
     grid-gap: 1.5rem;
     width: 100%;
+    padding-inline: 2rem;
 }
 
 #services .card {
