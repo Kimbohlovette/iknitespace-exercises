@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/Sio-favicon.png">
+    <link rel="prefetch" href="./assets/home-image2.png" as="image">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Sio Landing Page</title>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <span>Sio</span><span class="dot">.</span>
+        </div>
+        <nav class="navbar-desktop">
+            <ul class="navbar">
+                <li class="navItem">Home</li>
+                <li class="navItem">Key Features</li>
+                <li class="navItem">Pricing</li>
+                <li class="navItem">Testimonial</li>
+                <li class="navItem">FAQ</li>
+            </ul>
+        </nav>
+        <nav class="navbar-mobile">
+            <label for="toggler" class="nav-menu">Menu</label>
+            <input type="checkbox" name="toggler" id="toggler" class="toggler">
+            <div class="navbar-collapse">
+                <ul class="close-container">
+                    <li><label for="toggler" class="close"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg></label></li>
+                </ul>
+                <ul class="dropdown-menu">
+                    <li class="navItem">Home</li>
+                    <li class="navItem">Key Features</li>
+                    <li class="navItem">Pricing</li>
+                    <li class="navItem">Testimonial</li>
+                    <li class="navItem">FAQ</li>
+                </ul>
+                
+            </div>
+           
+        </nav>
+        <button class="btn btn-primary login-btn">Log in</button>
+    </header>
+
+    <div class="container">
+        <section id="home">
+            <div class="home-text-container">
+                <h1>Benefits of Regular Exercise</h1>
+                <h2>
+                    <span class="dash"> &mdash;</span> <span class="what-we-do">What we do</span></h2>
+                <p>In our fitness studio, you can experience the best level of customer service</p>
+                <button class="btn btn-primary">Contact us</button>
+            </div>
+    
+            <div class="home-image-container">
+                <img src="./assets/home-image2.png" loading="eager">
+            </div>
+        </section>
+    
+        <section id="services">
+            <div class="card">
+                <img src="./assets/target-icon.png" class="icon" loading="lazy">
+                <div>
+                    <h4>QUALITY SERVICES</h4>
+                    <p>At our fitness/ <button class="btn btn-studio">studio</button></p>
+                    <button class="btn btn-pro">Pro</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/space-icon.png" class="icon" loading="lazy">
+                <h4>SPACIOUS GYM</h4>
+                <p>At our fitness/ <button class="btn btn-studio">studio</button></p>
+                <button class="btn btn-pro">Pro</button>
+            </div>
+            <div class="card">
+                <img src="./assets/balls-icon.png" class="icon" loading="lazy">
+                <h4>UNIQUE PROGRAMS</h4>
+                <p>At our fitness/ <button class="btn btn-studio">studio</button></p>
+                <button class="btn btn-pro">Pro</button>
+            </div>
+            <div class="card">
+                <img src="./assets/book-stack-icon.png" class="icon" loading="lazy">
+                <h4>GROUP CLASSES</h4>
+                <p>At our fitness/ <button class="btn btn-studio">studio</button></p>
+                <button class="btn btn-pro">Pro</button>
+            </div>
+            
+        </section>
+    </div>
+</body>
+</html>
