@@ -17,7 +17,7 @@ body {
 }
 
 p, .navItem, .btn {
-    font-size: clamp(1.0rem, 0.5rem + 0.75vw, 1.75rem);
+    font-size: clamp(0.85rem, 0.5rem + 0.5vw, 1rem);
 }
 
 .btn {
@@ -39,7 +39,7 @@ p, .navItem, .btn {
 
 .container {
     inline-size: 100%;
-    padding-inline: 8rem;
+    padding-inline: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,7 +217,7 @@ header .navItem:hover {
 
 #services {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     background-color: #f3f5f7;
     border-radius: 1.25rem;
     grid-gap: 1.5rem;
@@ -298,7 +298,7 @@ header .navItem:hover {
 
 @media (max-width: 48rem) {
     .container {
-        padding-inline: 2rem;
+        padding-inline: 3rem;
     }
 
     header .navbar-mobile{
@@ -320,6 +320,9 @@ header .navItem:hover {
     }
 
     .container {
+        padding-inline: 0.5rem;
+    }
+    #home {
         padding-inline: 0.25rem;
     }
 }
