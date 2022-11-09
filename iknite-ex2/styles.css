@@ -14,3 +14,22 @@ nav button {
 nav li {
     list-style-type: none;
 }
+
+section#hero{
+    background-color: #3F6745;
+}
+
+#hero .play-btn {
+    margin-inline-end: -1.2rem;
+    background-color: #fd661f;
+}
+
+#hero .hero-text h1 {
+    font-size: 4rem !important;
+    font-weight:800;
+}
+
+#hero .hero-text p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}

@@ -9,7 +9,7 @@
     <title>Bootstrap Practice</title>
 </head>
 <body class="container">
-    <nav class="navbar navbar-expand-lg bg-tranparent fw-semibold fs-5">
+    <nav class="navbar navbar-expand-lg bg-tranparent fw-normal">
 
         <div class="container-fluid">
 
@@ -22,7 +22,7 @@
           </a>
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav w-100 d-flex justify-content-lg-evenly mb-2 mb-lg-0">
+            <ul class="navbar-nav w-100 d-flex justify-content-lg-between mb-2 mb-lg-0">
                 <li class="nav-item">
                     <ul class="d-lg-flex w-100">
                         <li class="nav-item">
@@ -32,10 +32,10 @@
                             <a class="nav-link" href="#">Product</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Service</a>
+                            <a href="#" class="nav-link">Service</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Contact</a>
+                            <a href="#" class="nav-link">Contact</a>
                         </li>  
                     </ul>
                 </li>
@@ -49,14 +49,38 @@
                         </li>
                     </ul>
                 </li>
-
-              
             </ul>
           </div>
-
         </div>
       </nav>
+
+      <section id="hero" class="text-white">
+        <div class="col col-lg-6 p-5">
+            <div class="hero-text py-5">
+                <h1>Shopify Products</h1>
+                <p class="text-opacity-25">More than 80,000+ companies trust our business.</p>  
+            </div>
+            
+            <div class="position-relative bg-white px-4">
+                <img src="./assets/JOHN_SMITH.png" class="float-left" alt="John Smith">
+                <div class="py-2 px-5 d-inline-flex flex-column justify-content-start  align-items-end align-items-lg-center">
+                    <div>
+                        <h4 class="text-dark">John Smith</h4>
+                        <p class="text-dark text-opacity-50">Watch our Intro videos</p>
+                    </div>
+
+                </div>
+                <button class="play-btn btn position-absolute bottom-50 end-0 rounded-circle border text-white border-0 shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="m5 4l10 6l-10 6V4z"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="col col-lg-6">
+
+        </div>
+
+      </section>
 </body>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+</html>position-relative 
