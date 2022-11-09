@@ -1,0 +1,16 @@
+body {
+    background-color: #F5F4F0;
+}
+
+
+.nav-link {
+    color:#0e130d;
+}
+
+nav button {
+    border-radius: 2px !important;
+}
+
+nav li {
+    list-style-type: none;
+}
