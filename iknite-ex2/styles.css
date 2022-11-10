@@ -12,8 +12,9 @@ nav button {
     border-radius: 2px !important;
 }
 
-nav li {
+ul {
     list-style-type: none;
+    padding-inline-start: 0;
 }
 
 section#hero{
@@ -33,4 +34,8 @@ section#hero{
 #hero .hero-text p {
     font-size: 1.1rem;
     font-weight: 600;
+}
+
+.card-container {
+    background-color: #3F6745;
 }
