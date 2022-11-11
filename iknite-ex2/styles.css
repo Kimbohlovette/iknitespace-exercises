@@ -59,3 +59,46 @@ section#hero{
     margin-inline-end: -4rem;
     cursor: pointer;
 }
+
+.cards {
+    background-color: #3F6745;
+}
+
+.image-container img{
+    object-fit: cover;
+    object-position: center;
+}
+
+.matrix-image{
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    margin-inline-end: -4rem;
+    margin-block-start: -5rem;
+}
+
+
+#creative {
+    margin-block-start: 18rem;
+}
+
+.user-avatar {
+    background-color: #fd661f;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+}
+
+
+.users-avatar .user-avatar {
+    background-color: #fd661f;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: smaller;
+}
+
+.customers {
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    margin-inline-start: -4rem;
+    margin-block-end: -4rem;  
+}
