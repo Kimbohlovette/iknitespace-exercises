@@ -36,6 +36,10 @@ section#hero{
     font-weight: 600;
 }
 
+.process-cards{
+    min-height: max-content;
+}
+
 .card-container {
     background-color: #3F6745;
 }
@@ -100,6 +104,12 @@ section#hero{
     padding-block: 2rem;
     margin-block: 4rem;
 
+}
+
+.creative-images .image-container img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 
 .contactus-header {
