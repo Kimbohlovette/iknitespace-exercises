@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Besnik | Tailwind css</title>
+</head>
+<body>
+    <header id="header" #headerEl class="w-full min-h-[4rem] bg-white flex flex-row justify-between md:justify-start items-center gap-x-8 fixed top-0 z-30">
+        <div id="brand" class="flex flex-row items-center md:justify-center w-52">
+          <img src="./assets/esnik_logo.png" class="h-6 w-auto">
+        </div>
+        <nav id="main-nav" class="md:grow pr-5 text-[#004299]">
+          <button (click)="toggleDropdown()" class="md:hidden text-2xl">
+
+          </button>
+          <div class="w-full flex flex-row justify-between items-center">
+          <ul class="hidden w-full md:flex flex-row justify-start gap-x-5 py-5 text-sm font-light">
+            <li class="">About</li>
+            <li class="">Product</li>
+            <li class="">Service</li>
+            <li class="">Contact</li>
+          </ul>
+          <div class="hidden md:flex authenticate px-5">
+            <button class="py-2 px-5 rounded-sm whitespace-nowrap text-sm">Login</button>
+            <button class="py-2 px-5 shadow-sm rounded-sm whitespace-nowrap text-sm">Sign up</button>
+          </div>
+        </div>
+        </nav>
+      </header>
+      
+      
+       <!--Mobile navebar------------------------------->
+</body>
+</html>
