@@ -1,0 +1,130 @@
+body {
+    background-color: #F5F4F0;
+    transition: all 0.2s ease;
+}
+
+
+.nav-link {
+    color:#0e130d;
+}
+
+nav button {
+    border-radius: 2px !important;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+section#hero{
+    background-color: #3F6745;
+}
+
+#hero .play-btn {
+    margin-inline-end: -1.2rem;
+    background-color: #fd661f;
+}
+
+#hero .hero-text h1 {
+    font-size: 4rem !important;
+    font-weight:800;
+}
+
+#hero .hero-text p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-container {
+    background-color: #3F6745;
+}
+
+#motivation .card-container .shopping-list-btn {
+    height: 1.5in;
+    width: 1.5in;
+    background-color: #fd661f;
+    color: white;
+}
+#motivation .card-container .shopping-list-btn  {
+    height: 1.5in;
+    width: 1.5in;
+    background-color: #fd661f;
+    color: white;
+}
+
+.shopping-list-btn {
+    inset-block-start: 4rem;
+    inset-inline-end: 0;
+    margin-inline-end: -4rem;
+    cursor: pointer;
+}
+
+.cards {
+    background-color: #3F6745;
+}
+
+.image-container img{
+    object-fit: cover;
+    object-position: center;
+}
+
+.users-avatar {
+    gap: 0.1rem;
+    
+}
+.user-avatar {
+    background-color: #fd661f;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    
+}
+.users-avatar .user-avatar {
+    background-color: #fd661f;
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: xx-small;
+}
+
+
+ .customers{
+    max-inline-size: fit-content;
+}
+
+#creative > .row {
+    gap: 4rem;
+}
+
+.creative-images ,.creative-text {
+    padding-block: 2rem;
+    margin-block: 4rem;
+
+}
+
+.contactus-header {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+footer {
+    background-color:#0e130d;
+    color: white;
+    padding-inline: 4rem;
+}
+
+@media (max-width: 520px) {
+    .contactus-header{ 
+        font-size:3rem;
+}
+
+}
+
+.get-started-btn{
+    background-color: #fd661f;
+}
+
+.copyright{
+    font-size: x-small;
+}
+
