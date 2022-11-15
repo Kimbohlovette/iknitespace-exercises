@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "dev": "postcss styles/app.css -o public/styles.css --watch --purge",
+    "dev": "npx tailwindcss -i styles/app.css -o public/styles.css --watch",
     "prod": "cross-env NODE-ENV=developement postcss styles/app.css -o public/styles.css"
   },
   "keywords": [],

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Lexend";
+    src: url("../public/assets/fonts/Lexend/Lexend-VariableFont_wght.ttf");
+  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

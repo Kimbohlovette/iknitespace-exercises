@@ -7,31 +7,94 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Besnik | Tailwind css</title>
 </head>
-<body>
-    <header id="header" #headerEl class="w-full min-h-[4rem] bg-white flex flex-row justify-between md:justify-start items-center gap-x-8 fixed top-0 z-30">
-        <div id="brand" class="flex flex-row items-center md:justify-center w-52">
-          <img src="./assets/esnik_logo.png" class="h-6 w-auto">
+<body class="bg-[#F5F4F0] transition-transform ease-in duration-300">
+    <header id="header" class="bg-white flex flex-row justify-between items-center gap-x-8 z-30 text-[#0E130D] bg-transparent px-4 py-6">
+        <div id="brand" class="flex flex-row items-center md:justify-start grow-1">
+            <img src="./assets/esnik_logo.png" class="">
         </div>
-        <nav id="main-nav" class="md:grow pr-5 text-[#004299]">
-          <button (click)="toggleDropdown()" class="md:hidden text-2xl">
+        <nav id="main-nav" class="grow pr-5">
 
-          </button>
-          <div class="w-full flex flex-row justify-between items-center">
-          <ul class="hidden w-full md:flex flex-row justify-start gap-x-5 py-5 text-sm font-light">
-            <li class="">About</li>
-            <li class="">Product</li>
-            <li class="">Service</li>
-            <li class="">Contact</li>
-          </ul>
-          <div class="hidden md:flex authenticate px-5">
-            <button class="py-2 px-5 rounded-sm whitespace-nowrap text-sm">Login</button>
-            <button class="py-2 px-5 shadow-sm rounded-sm whitespace-nowrap text-sm">Sign up</button>
-          </div>
-        </div>
+            <button id="menu-btn" class="sm:hidden text-3xl float-right sm:clear-both">
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+
+            </button>
+
+
+<!--Mobile Dropdown menu -->
+
+            <div id="dropdown-menu" class="dropdown-menu fixed top-0 right-0 w-full sm:w-3/5  hidden p-2 z-50">
+
+                <div class="bg-white drop-shadow-md p-6 rounded-sm">
+                    <div class="flex flex-row justify-between">
+                        <div class="short-brand">
+                            <img src="./assets/short-brand.png" alt="">
+                        </div>
+                        <div id="close-menu-btn" class="text-4xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="lightgray" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-3.4 14L12 13.4L8.4 17L7 15.6l3.6-3.6L7 8.4L8.4 7l3.6 3.6L15.6 7L17 8.4L13.4 12l3.6 3.6l-1.4 1.4Z"/></svg>
+                        </div>
+                    </div>
+                    <nav class="pt-8 pb-4">
+                        <ul>
+                            <a href="#"><li class="py-2 leading-6 text-[#0E130D] font-sans uppercase hover:underline hover:underline-offset-8 rounded-sm">About</li></a>
+                            <a href="#"><li class="py-2 leading-6 text-[#0E130D] font-sans uppercase hover:underline hover:underline-offset-8 rounded-sm">Products</li></a>
+                            <a href="#"><li class="py-2 leading-6 text-[#0E130D] font-sans uppercase hover:underline hover:underline-offset-8 rounded-sm">Services</li></a>
+                            <a href="#"><li class="py-2 leading-6 text-[#0E130D] font-sans uppercase hover:underline hover:underline-offset-8 rounded-sm">Contacts</li></a>
+                        </ul>
+                    </nav>
+                    <div class="py-8">
+                        <hr>
+                    </div>
+                    <div class="login">
+                        <button class="py-2 p-4 bg-green-100 rounded-sm">SIGN UP</button>
+                        <p class="text-[#3f6745] text-sm leading-6 py-2 underline underline-offset-2"><a href="#">Or click here to login.</a></p>
+                    </div>
+                </div>
+                
+            </div>
+
+<!----------------end of mobile dropdown------------------------>
+
+
+            <div class="w-full flex flex-row sm:justify-between items-center grow">
+                <ul class="hidden w-full sm:flex flex-row justify-center py-5">
+                    <li class="cursor-pointer px-2">About</li>
+                    <li class="cursor-pointer px-2">Product</li>
+                    <li class="cursor-pointer px-2">Service</li>
+                    <li class="cursor-pointer px-2">Contact</li>
+                </ul>
+                <div class="hidden sm:flex px-5">
+                    <button class="py-2 px-5 rounded-sm whitespace-nowrap">Login</button>
+                    <button class="py-2 px-5 shadow-sm whitespace-nowrap border">Sign up</button>
+                </div>
+            </div>
         </nav>
-      </header>
-      
-      
-       <!--Mobile navebar------------------------------->
+        </header>
+
+        <section id="hero" class="hero px-4 bg-[#3f6745] py-8 text-white w-full">
+            <div class="flex flex-col sm:flex-row max-h-min w-full">
+                <div class="hero-text grow">
+                    <span class="text-5xl font-black font-lexend py-2">Shopify products</span>
+                    <p class="leading-6 py-8 w-3/5">More than 80,000+ companies trust our business.</p>
+                    <div class="relative flex justify-center bg-white py-4 my-5 pr-4 w-11/12">
+                        <img src="./assets/JOHN_SMITH.png" class="absolute bottom-0 left-2 h-28">
+                        <div class="w-1/2">
+                            <span class="text-lg font-semibold py-2 text-slate-900">John Smith</span>
+                            <p class="text-sm text-slate-600">Watch our intro videos</p>
+                        </div>
+                        <div class="rounded-full p-2 bg-orange-500 absolute -right-4 top-1/4">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="white" d="m5 4l10 6l-10 6V4z"/></svg>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="hero-image py-8 grow">
+                    <img src="./assets/man-reading2.png" class="object-cover object-center ">
+                </div>
+            </div>
+        </section>
+    <script src="./script.js"></script>
 </body>
 </html>
