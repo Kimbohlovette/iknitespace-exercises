@@ -103,9 +103,9 @@
                     <span class="text-slate-800 text-2xl font-extrabold ">Build on both: Google web stories and AMP website format</span>
                 </div>
                 <div class="flex justify-center items-center">
-                    <img src="./assets/services-icon.png" alt="">
+                    <img src="./assets/services-icon.png" class="aspect-square object-center object-cover">
                 </div>
-                <div class="xs:col-span-2 py-4 flex flex-row gap-4">
+                <div class="xs:col-span-2 md:col-span-1 py-4 flex flex-row gap-4">
                     <div class="flex-1">
                         <h1 class="text-3xl font-bold text-slate-800">5640</h1>
                         <p class="text-slate-500">Product sales per day using our tool</p>
@@ -121,7 +121,7 @@
             <div class="flex flex-col">
                 <div class="w-full pb-4 px-2 xs:text-center">
                     <span class="text-3xl text-slate-800 font-bold py-4">Our Creative Process.</span>
-                    <p class="py-2 text-slate-500">Financial instituations provide financial services for members and clients. it is also termed as financial intermediaries because they act as middlemen between the savers and borrowers</p>
+                    <p class="py-2 md:w-4/5 lg:w-3/5 mx-auto text-slate-500">Financial instituations provide financial services for members and clients. it is also termed as financial intermediaries because they act as middlemen between the savers and borrowers</p>
                 </div>
                 <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3  pt-4">
                     <div class="bg-white p-8 rounded-sm drop-shadow-md">
@@ -143,7 +143,7 @@
             </div>
         </section>
         <section class="py-8 px-4 xs:px-8 sm:px-10 lg:px-24 w-full">
-            <div class="flex flex-col sm:flex-row items-center justify-center">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-8">
                 <div class="flex-1">
                     <h1 class="py-8 text-2xl  text-lexend text-slate-800 font-bold">Why product stories? learn more</h1>
                     <ul>
@@ -187,7 +187,7 @@
 
                     <!----------Product Sales dashboard ------------>
 
-                    <div class="flex flex-col justify-center items-center gap-4 text-center p-4  bg-white lg:py-8">
+                    <div class="flex flex-col justify-center items-center gap-4 text-center p-4  bg-white lg:py-8 sm:h-fit sm:self-center sm:flex-1">
                         <div>
                             <h1 class="text-2xl font-bold text-slate-800 py-2">$500+</h1>
                             <p class="text-slate-500 text-sm">Earnings per day</p>
@@ -203,16 +203,16 @@
 
                     <!-- Product card code goes here ---------->
 
-                    <div class="p-4 bg-[#3F6745] xs:flex xs:flex-row xs:gap-8 xs:place-items-center">
+                    <div class="p-4 bg-[#3F6745] xs:flex xs:flex-row xs:gap-8 xs:place-items-center sm:place-items-baseline sm:block sm:max-w-[16rem]">
                         <div class="xs:flex-1 rounded-sm">
                             <img src="./assets/chair-tablet.png" class="aspect-square w-full h-auto rounded-sm">
                         </div>
                         <div class="xs:flex-1">
                             <div class="py-4">
-                                <h1 class="py-4 text-white text-xl xs:text-3xl font-semibold">Classic Sofa</h1>
+                                <h1 class="py-2 text-white text-xl xs:text-xl font-semibold">Classic Sofa</h1>
                                 <p class="text-slate-200 text-sm py-2">Our popular Mika style is a modern take in the classic button down sofa</p>
                             </div>
-                            <button class="py-2 px-4 w-full text-center border border-green-200 font-bold text-slate-50 rounded-sm mb-2 hover:bg-green-900 hover:ring-2 hover:ring-green-800 hover:border-transparent">Buy now for $56</button>
+                            <button class="py-2 px-4 w-full text-center border border-green-200 font-bold text-slate-50 rounded-sm mb-2 hover:bg-green-900 hover:ring-4 hover:ring-green-800 hover:border-transparent">Buy now for $56</button>
                         </div>
 
                     </div>
@@ -240,14 +240,14 @@
             </div>
         </section>
         <footer class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-24 bg-[#17291B]">
-            <h1 class="text-white text-4xl sm:text-5xl font-bold py-8 lg:py-12 xs:w-2/3">Get intouch with us.</h1>
-            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-8">
+            <h1 class="text-white text-4xl sm:text-5xl font-bold py-6 lg:py-12 xs:w-2/3">Get intouch with us.</h1>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-8 py-2">
                 <div>
                     <span class="text-slate-100 py-2">More than 80,000 companies trust our business.</span>
                 </div>
                 <div>
-                    <div class="flex bg-white p-1 rounded-sm">
-                        <input type="text" placeholder="Your business email" class="py-2 px-4 focus:outline-none placeholder-slate-400 placeholder:italic border-none inline-block flex-1 min-w-0">
+                    <div id="email-control" class="ring-4 flex bg-white p-1 rounded-sm">
+                        <input id="email" type="email" placeholder="Your business email" class="py-2 px-4 focus:outline-none placeholder-slate-400 placeholder:italic border-none inline-block flex-1 min-w-0">
                         <button class="px-4 py-2 bg-orange-400 text-white font-md text-sm rounded-sm ">
                            <span class="hidden xs:inline"> Get Started</span>
                             <svg class="inline mx-1" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="16" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg>
@@ -261,21 +261,21 @@
                 </div>
                 <div class="py-4">
                     <ul class="flex flex-col xs:flex-row gap-y-2 gap-x-4 text-slate-50">
-                        <li>About</li>
-                        <li>Products</li>
-                        <li>Services</li>
-                        <li>Contacts</li>
+                        <li class="cursor-pointer hover:text-slate-400 transition-colors duration-100 ease-in">About</li>
+                        <li class="cursor-pointer hover:text-slate-400 transition-colors duration-100 ease-in">Products</li>
+                        <li class="cursor-pointer hover:text-slate-400 transition-colors duration-100 ease-in">Services</li>
+                        <li class="cursor-pointer hover:text-slate-400 transition-colors duration-100 ease-in">Contacts</li>
                     </ul>
                 </div>
                 <div class="py-4">
                     <ul class="flex flex-row gap-y-2 gap-x-4 text-slate-50 text-2xl">
-                        <li>
+                        <li class="cursor-pointer hover:scale-110 transition-transform duration-100 ease-in">
                             <svg class="text-white fs-4" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
                         </li>
-                        <li>
+                        <li class="cursor-pointer hover:scale-110 transition-transform duration-100 ease-in">
                             <svg class="text-white fs-4" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1S717.1 625.5 717.1 512S625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7S645.3 438.6 645.3 512S585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9s47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8c-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1c-18.2-7.3-31.8-16.1-45.8-30.2c-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9c7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2c14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"/></svg>
                         </li>
-                        <li>
+                        <li class="cursor-pointer hover:scale-110 transition-transform duration-100 ease-in">
                             <svg class="text-white fs-4" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="white" d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149C1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5c58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5c2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9ZM207 353.89v-196.5l145 98.2Z"/></svg>
                         </li>
                     </ul>
