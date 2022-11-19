@@ -28,7 +28,7 @@ module.exports = {
 
     extend: {
         fontFamily: {
-            lexend: ['Lexend']
+            lexend: ['Lexend','sans']
         }
     },
   },
