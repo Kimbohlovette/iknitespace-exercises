@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Besnik | Tailwind css</title>
 </head>
-<body class="bg-[#F5F4F0] transition-transform ease-in duration-300">
+<body class="bg-[#F5F4F0] transition-transform ease-in duration-300 lg:container lg:mx-auto">
     <header id="header" class="bg-white flex flex-row justify-between items-center gap-x-8 z-30 text-[#0E130D] bg-transparent px-4 py-6">
         <div id="brand" class="flex flex-row items-center md:justify-start grow-1">
             <img src="./assets/esnik_logo.png" class="">
@@ -72,11 +72,11 @@
         </nav>
         </header>
 
-        <section id="hero" class="hero px-4 bg-[#3f6745] py-8 text-white w-full xs:px-8 sm:px-10 lg:px-24">
+        <section id="hero" class="hero px-4 bg-[#3f6745] py-8 text-white w-full xs:px-8 sm:px-10 lg:px-28">
             <div class="flex flex-col sm:flex-row lg:gap-16 max-h-min w-full">
                 <div class="hero-text flex-1">
-                    <span class="text-5xl font-black font-lexend py-2">Shopify products</span>
-                    <p class="leading-6 py-8 w-3/5 text-slate-100">More than 80,000+ companies trust our business.</p>
+                    <span class="text-5xl lg:text-8xl font-black font-lexend py-2">Shopify products</span>
+                    <p class="leading-6 py-8 w-3/5 text-slate-100 font-semibold text-lg">More than 80,000+ companies trust our business.</p>
                     <div class="relative flex bg-white py-4 xs:py-8 my-5 xs:pr-4 w-11/12 rounded-sm">
                         <img src="./assets/JOHN_SMITH.png" class="absolute bottom-0 left-2 h-28">
                         <div class="ml-auto pr-4 xs:mx-auto sm:pl-16">
@@ -96,31 +96,31 @@
             </div>
         </section>
 
-        <section id="services" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-24 ">
+        <section id="services" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-28 ">
             <span>SERVICES WE PROVIDE</span>
             <div class="w-full grid gap-2 xs:gap-4 grid-cols-1 xs:grid-cols-2 md:grid-cols-3">
                 <div class="py-4">
-                    <span class="text-slate-800 text-2xl font-extrabold ">Build on both: Google web stories and AMP website format</span>
+                    <span class="text-slate-800 text-3xl lg:text-5xl leading-snug font-extrabold ">Build on both: Google web stories and AMP website format</span>
                 </div>
                 <div class="flex justify-center items-center">
                     <img src="./assets/services-icon.png" class="aspect-square object-center object-cover">
                 </div>
                 <div class="xs:col-span-2 md:col-span-1 py-4 flex flex-row gap-4">
                     <div class="flex-1">
-                        <h1 class="text-3xl font-bold text-slate-800">5640</h1>
-                        <p class="text-slate-500">Product sales per day using our tool</p>
+                        <h1 class="text-3xl lg:text-5xl font-bold text-slate-800">5640</h1>
+                        <p class="text-slate-500 py-2">Product sales per day using our tool</p>
                     </div>
                     <div class="flex-1">
-                        <h1 class="text-3xl font-bold text-slate-800">6M+</h1>
-                        <p class="text-slate-500">Download total in this year</p>
+                        <h1 class="text-3xl lg:text-5xl font-bold text-slate-800">6M+</h1>
+                        <p class="text-slate-500 py-2">Download total in this year</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="processes" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-24">
+        <section id="processes" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-28">
             <div class="flex flex-col">
                 <div class="w-full pb-4 px-2 xs:text-center">
-                    <span class="text-3xl text-slate-800 font-bold py-4">Our Creative Process.</span>
+                    <span class="text-3xl lg:text-4xl text-slate-800 font-bold py-4">Our Creative Process.</span>
                     <p class="py-2 md:w-4/5 lg:w-3/5 mx-auto text-slate-500">Financial instituations provide financial services for members and clients. it is also termed as financial intermediaries because they act as middlemen between the savers and borrowers</p>
                 </div>
                 <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3  pt-4">
@@ -142,10 +142,10 @@
                 </div>
             </div>
         </section>
-        <section class="py-8 px-4 xs:px-8 sm:px-10 lg:px-24 w-full">
+        <section class="py-8 px-4 xs:px-8 sm:px-10 lg:px-28 w-full">
             <div class="flex flex-col md:flex-row items-center justify-center gap-8">
                 <div class="flex-1">
-                    <h1 class="py-8 text-2xl  text-lexend text-slate-800 font-bold">Why product stories? learn more</h1>
+                    <h1 class="py-8 text-2xl lg:text-5xl lg:w-2/3 lg:leading-snug  text-lexend text-slate-800 font-bold">Why product stories? learn more</h1>
                     <ul>
                         <li class="flex flex-row items-start py-2">
                             <div>
@@ -209,7 +209,7 @@
                         </div>
                         <div class="xs:flex-1">
                             <div class="py-4">
-                                <h1 class="py-2 text-white text-xl xs:text-xl font-semibold">Classic Sofa</h1>
+                                <h1 class="py-2 text-white text-xl xs:text-xl lg:text-2xl font-semibold">Classic Sofa</h1>
                                 <p class="text-slate-200 text-sm py-2">Our popular Mika style is a modern take in the classic button down sofa</p>
                             </div>
                             <button class="py-2 px-4 w-full text-center border border-green-200 font-bold text-slate-50 rounded-sm mb-2 hover:bg-green-900 hover:ring-4 hover:ring-green-800 hover:border-transparent">Buy now for $56</button>
@@ -219,10 +219,10 @@
                 </div>
             </div>
         </section>
-        <section id="products" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-24">
+        <section id="products" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-28">
             <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-16 justify-center items-center gap-y-24">
                 <div class="flex-1">
-                    <div class="grid grid-cols-2 gap-4 p-4 bg-[#3F6745] relative mx-4 my-8">
+                    <div class="grid grid-cols-2 gap-4 p-4 bg-[#3F6745] relative xs:mx-4 xs:my-8 sm:m-0 md:mx-4 md:my-8">
                         <div class="bg-white">
                             <img src="./assets/man-jumping.png" class="w-full h-auto aspect-square object-cover object-center place-self-center">
                         </div>
@@ -232,11 +232,11 @@
 
                         <!--------Absolutely placed surfaces-->
 
-                        <div class="absolute -top-8 -right-4 bg-white p-2">
+                        <div class="absolute hidden xs:block sm:hidden md:block -top-8 -right-4 bg-white p-2">
                             <img src="./assets/matrix-image.png" class="aspect-auto h-auto w-full object-center">
                         </div>
 
-                        <div id="customers" class="absolute -bottom-8 -left-4">
+                        <div id="customers" class="absolute hidden xs:block sm:hidden md:block -bottom-8 -left-4">
                             <div class="flex flex-col items-center p-1 bg-white rounded-sm w-fit">
                                 <span class="p-1 my-2 bg-orange-400 hover:bg-orange-600  transition-colors duration-300 ease-linear rounded-full drop-shadow-sm text-white">
                                     <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
@@ -277,12 +277,12 @@
                 </div>
                 <div class="flex-1">
                     <span class="font-md pb-4 text-slate-600">CREATIVE INTELLIGENCE</span>
-                    <h1 class="text-2xl font-bold py-4 text-slate-800 font-lexend">Know your Ads inside & out performance</h1>
+                    <h1 class="text-2xl lg:text-4xl font-bold py-4 text-slate-800 font-lexend">Know your Ads inside & out performance</h1>
                     <p class="text-slate-500">When do I feature my Product? Which spokesperson is my target audience responding to? ow optimize my call to action? Get real-time answers to improve your creative mid-flight. And see what's worked in the past to get intel for your next campaign</p>
                 </div>
             </div>
         </section>
-        <footer id="contacts" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-24 bg-[#17291B]">
+        <footer id="contacts" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-24 mt-4 bg-[#17291B]">
             <h1 class="text-white text-4xl sm:text-5xl font-bold py-6 lg:py-12 xs:w-2/3">Get intouch with us.</h1>
             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-8 py-2">
                 <div>
