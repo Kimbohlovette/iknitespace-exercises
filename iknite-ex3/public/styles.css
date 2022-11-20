@@ -702,6 +702,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-\[repeat\(auto-fit\2c _minmax\(200px\2c _1fr\)\)\]{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1019,16 +1023,12 @@ video {
   font-size: 9px;
 }
 
-.font-black{
-  font-weight: 900;
+.font-extrabold{
+  font-weight: 800;
 }
 
 .font-semibold{
   font-weight: 600;
-}
-
-.font-extrabold{
-  font-weight: 800;
 }
 
 .font-bold{
@@ -1045,10 +1045,6 @@ video {
 
 .leading-6{
   line-height: 1.5rem;
-}
-
-.leading-snug{
-  line-height: 1.375;
 }
 
 .leading-normal{
@@ -1523,10 +1519,6 @@ video {
 
   .lg\:w-2\/3{
     width: 66.666667%;
-  }
-
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:gap-16{
