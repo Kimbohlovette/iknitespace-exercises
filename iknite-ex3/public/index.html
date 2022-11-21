@@ -24,31 +24,31 @@
 
 <!--Mobile Dropdown menu -->
 
-            <div id="dropdown-menu" class="dropdown-menu fixed top-0 right-0 w-full sm:w-3/5  hidden p-2 z-50 bg-slate-800/90 backdrop-blur-2xl">
+            <div id="dropdown-menu" class="dropdown-menu fixed top-0 right-0 w-full sm:w-3/5  hidden py-2 z-50 bg-slate-800/90 backdrop-blur-2xl">
 
-                <div class="bg-white drop-shadow-md p-6 rounded-sm">
-                    <div class="flex flex-row justify-between">
+                <div class="bg-white drop-shadow-md py-6 rounded-sm">
+                    <div class="px-6 flex flex-row justify-between">
                         <div class="short-brand">
                             <img src="./assets/short-brand.png" alt="">
                         </div>
                         <div id="close-menu-btn" class="text-4xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="lightgray" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-3.4 14L12 13.4L8.4 17L7 15.6l3.6-3.6L7 8.4L8.4 7l3.6 3.6L15.6 7L17 8.4L13.4 12l3.6 3.6l-1.4 1.4Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="m4.5 4.5l6 6m-6 0l6-6"/></svg>
                         </div>
                     </div>
-                    <nav class="pt-8 pb-4">
-                        <ul>
-                            <a href="#hero"><li class="py-2 leading-6 text-[#0E130D] font-sans uppercase hover:underline hover:underline-offset-8 rounded-sm">About</li></a>
-                            <a href="#processes"><li class="py-2 leading-6 text-[#0E130D] font-sans uppercase hover:underline hover:underline-offset-8 rounded-sm">Products</li></a>
-                            <a href="#services"><li class="py-2 leading-6 text-[#0E130D] font-sans uppercase hover:underline hover:underline-offset-8 rounded-sm">Services</li></a>
-                            <a href="#contacts"><li class="py-2 leading-6 text-[#0E130D] font-sans uppercase hover:underline hover:underline-offset-8 rounded-sm">Contacts</li></a>
+                    <nav class="px-4 pt-8 pb-4">
+                        <ul class="[&>a>*]:px-2 [&>a>*:hover]:bg-slate-200">
+                            <a href="#hero"><li class="py-2 leading-6 text-[#0E130D] rounded-sm">About</li></a>
+                            <a href="#processes"><li class="py-2 leading-6 text-[#0E130D] rounded-sm">Products</li></a>
+                            <a href="#services"><li class="py-2 leading-6 text-[#0E130D] rounded-sm">Services</li></a>
+                            <a href="#contacts"><li class="py-2 leading-6 text-[#0E130D] rounded-sm">Contacts</li></a>
                         </ul>
                     </nav>
-                    <div class="py-8">
+                    <div class="px-6 py-8">
                         <hr>
                     </div>
-                    <div class="login">
-                        <button class="py-2 p-4 bg-green-100 rounded-sm">SIGN UP</button>
-                        <p class="text-[#3f6745] text-sm leading-6 py-2 underline underline-offset-2"><a href="#">Or click here to login.</a></p>
+                    <div class="login px-6">
+                        <button class="py-2 p-4 bg-slate-300 hover:bg-slate-400 hover:text-slate-100 rounded-sm text-slate-800">Sign in</button>
+                        <p class="text-sm leading-6 py-2 text-slate-500">Don't have an account? <a href="#" class="font-bold underline">Sign up here.</a></p>
                     </div>
                 </div>
                 
@@ -222,7 +222,7 @@
         <section id="products" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-28">
             <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-16 justify-center items-center gap-y-24">
                 <div class="flex-1">
-                    <div class="grid grid-cols-2 gap-4 p-4 bg-[#3F6745] relative xs:mx-4 xs:my-8 sm:m-0 md:mx-4 md:my-8">
+                    <div class="relative flex flex-col gap-4 p-4 bg-[#3F6745] my-16 mx-4">
                         <div class="bg-white">
                             <img src="./assets/man-jumping.png" class="w-full h-auto aspect-square object-cover object-center place-self-center">
                         </div>
@@ -232,11 +232,11 @@
 
                         <!--------Absolutely placed surfaces-->
 
-                        <div class="absolute hidden xs:block sm:hidden md:block -top-8 -right-4 bg-white p-2">
-                            <img src="./assets/matrix-image.png" class="aspect-auto h-auto w-full object-center">
+                        <div class="absolute -top-16 -right-4 bg-white p-2">
+                            <img src="./assets/matrix-image.png" class="aspect-square h-auto w-full object-center object-cover ">
                         </div>
 
-                        <div id="customers" class="absolute hidden xs:block sm:hidden md:block -bottom-8 -left-4">
+                        <div id="customers" class="absolute -bottom-16 -left-4">
                             <div class="flex flex-col items-center p-1 bg-white rounded-sm w-fit">
                                 <span class="p-1 my-2 bg-orange-400 hover:bg-orange-600  transition-colors duration-300 ease-linear rounded-full drop-shadow-sm text-white">
                                     <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
