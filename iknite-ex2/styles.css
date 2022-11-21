@@ -35,6 +35,13 @@ section#hero{
     font-size: 1.1rem;
     font-weight: 600;
 }
+#hero img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1;
+}
 
 .process-cards{
     min-height: max-content;
@@ -42,25 +49,18 @@ section#hero{
 
 .card-container {
     background-color: #3F6745;
+    margin-inline-end: 2rem;
+    margin-block-start: 2rem;
 }
 
-#motivation .card-container .shopping-list-btn {
-    height: 1.5in;
-    width: 1.5in;
-    background-color: #fd661f;
-    color: white;
-}
 #motivation .card-container .shopping-list-btn  {
     height: 1.5in;
     width: 1.5in;
     background-color: #fd661f;
     color: white;
-}
-
-.shopping-list-btn {
-    inset-block-start: 4rem;
+    inset-block-start: 2rem;
     inset-inline-end: 0;
-    margin-inline-end: -4rem;
+    margin-inline-end: -2rem;
     cursor: pointer;
 }
 
