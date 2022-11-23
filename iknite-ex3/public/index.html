@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Besnik | Tailwind css</title>
+</head>
+<body class="bg-[#F5F4F0] transition-transform ease-in duration-300 lg:container lg:mx-auto">
+    <header id="header" class="bg-white flex flex-row justify-between items-center gap-x-8 z-30 text-[#0E130D] bg-transparent px-4 py-6">
+        <div id="brand" class="flex flex-row items-center md:justify-start grow-1">
+            <img src="./assets/esnik_logo.png" class="">
+        </div>
+        <nav id="main-nav" class="grow pr-5">
+
+            <button id="menu-btn" class="sm:hidden text-3xl float-right sm:clear-both">
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+
+            </button>
+
+
+<!--Mobile Dropdown menu -->
+
+            <div id="dropdown-menu" class="dropdown-menu fixed top-0 right-0 w-full sm:w-3/5  hidden py-2 z-50 bg-slate-800/90 backdrop-blur-2xl">
+
+                <div class="bg-white drop-shadow-md py-6 rounded-sm">
+                    <div class="px-6 flex flex-row justify-between">
+                        <div class="short-brand">
+                            <img src="./assets/short-brand.png" alt="">
+                        </div>
+                        <div id="close-menu-btn" class="text-4xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="m4.5 4.5l6 6m-6 0l6-6"/></svg>
+                        </div>
+                    </div>
+                    <nav class="px-4 pt-8 pb-4">
+                        <ul class="[&>a>*]:px-2 [&>a>*:hover]:bg-slate-200">
+                            <a href="#hero"><li class="py-2 leading-6 text-[#0E130D] rounded-sm">About</li></a>
+                            <a href="#processes"><li class="py-2 leading-6 text-[#0E130D] rounded-sm">Products</li></a>
+                            <a href="#services"><li class="py-2 leading-6 text-[#0E130D] rounded-sm">Services</li></a>
+                            <a href="#contacts"><li class="py-2 leading-6 text-[#0E130D] rounded-sm">Contacts</li></a>
+                        </ul>
+                    </nav>
+                    <div class="px-6 py-8">
+                        <hr>
+                    </div>
+                    <div class="login px-6">
+                        <button class="py-2 p-4 bg-slate-300 hover:bg-slate-400 hover:text-slate-100 rounded-sm text-slate-800">Sign in</button>
+                        <p class="text-sm leading-6 py-2 text-slate-500">Don't have an account? <a href="#" class="font-bold underline">Sign up here.</a></p>
+                    </div>
+                </div>
+                
+            </div>
+
+<!----------------end of mobile dropdown------------------------>
+
+
+            <div class="w-full flex flex-row sm:justify-between items-center grow">
+                <ul class="hidden w-full sm:flex flex-row justify-center py-5">
+                    <li class="cursor-pointer hover:text-slate-500 px-2"><a href="#hero">About</a></li>
+                    <li class="cursor-pointer hover:text-slate-500 px-2"><a href="#services">Services</a></li>
+                    <li class="cursor-pointer hover:text-slate-500 px-2"><a href="#processes">Products</a></li>
+                    <li class="cursor-pointer hover:text-slate-500 px-2"><a href="#contacts">Contacts</a></li>
+                </ul>
+                <div class="hidden sm:flex gap-2 px-5">
+                    <button class="py-2 px-5 rounded-sm whitespace-nowrap hover:shadow-sm ">Login</button>
+                    <button class="py-2 px-5 hover:shadow-sm whitespace-nowrap border">Sign up</button>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+        <section id="hero" class="hero px-4 bg-[#3f6745] py-8 text-white w-full xs:px-8 sm:px-10 lg:px-28">
+            <div class="flex flex-col sm:flex-row lg:gap-16 max-h-min w-full">
+                <div class="hero-text flex-1">
+                    <span class="text-5xl lg:text-8xl font-extrabold font-lexend py-2">Shopify products</span>
+                    <p class="leading-6 py-8 w-3/5 text-slate-100 font-semibold text-lg">More than 80,000+ companies trust our business.</p>
+                    <div class="relative flex bg-white py-4 xs:py-8 my-5 xs:pr-4 w-11/12 rounded-sm">
+                        <img src="./assets/JOHN_SMITH.png" class="absolute bottom-0 left-2 h-28">
+                        <div class="ml-auto pr-4 xs:mx-auto sm:pl-16">
+                            <span class="text-lg xs:text-xl font-semibold py-2 xs:py-4 text-slate-900">John Smith</span>
+                            <p class="text-sm text-slate-600">Watch our intro videos</p>
+                        </div>
+                        <div class="rounded-full p-3 text-lg bg-orange-500 hover:bg-orange-600 ring-orange-400 drop-shadow-sm absolute -right-4 top-1/4">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="white" d="m5 4l10 6l-10 6V4z"/></svg>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="hero-image py-8 flex-1">
+                    <img src="./assets/man-reading2.png" class="object-cover object-center mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-28 ">
+            <span>SERVICES WE PROVIDE</span>
+            <div class="w-full grid gap-2 xs:gap-4 grid-cols-1 xs:grid-cols-2 md:grid-cols-3">
+                <div class="py-4">
+                    <span class="text-slate-800 text-3xl lg:text-5xl font-extrabold leading-normal">Build on both: Google web stories and AMP website format</span>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="./assets/services-icon.png" class="aspect-square object-center object-cover">
+                </div>
+                <div class="xs:col-span-2 md:col-span-1 py-4 flex flex-row gap-4">
+                    <div class="flex-1">
+                        <h1 class="text-3xl lg:text-5xl font-bold text-slate-800">5640</h1>
+                        <p class="text-slate-500 py-2">Product sales per day using our tool</p>
+                    </div>
+                    <div class="flex-1">
+                        <h1 class="text-3xl lg:text-5xl font-bold text-slate-800">6M+</h1>
+                        <p class="text-slate-500 py-2">Download total in this year</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="processes" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-28">
+            <div class="flex flex-col">
+                <div class="w-full pb-4 px-2 xs:text-center">
+                    <span class="text-3xl lg:text-4xl text-slate-800 font-bold py-4">Our Creative Process.</span>
+                    <p class="py-2 md:w-4/5 lg:w-3/5 mx-auto text-slate-500">Financial instituations provide financial services for members and clients. it is also termed as financial intermediaries because they act as middlemen between the savers and borrowers</p>
+                </div>
+                <div class="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-8 pt-4">
+                    <div class="bg-white p-8 rounded-sm drop-shadow-md">
+                        <img src="./assets/seo-icon.png" alt="">
+                        <h1 class="py-2 font-bold text-2xl text-slate-800">For SEO</h1>
+                        <p class="text-slate-500">Improve search ranking son mobile, automatically</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm drop-shadow-md">
+                        <img src="./assets/content-icon.png" alt="">
+                        <h1 class="py-2 font-bold text-2xl text-slate-800">For Content</h1>
+                        <p class="text-slate-500">Your new content creation tool for better engagement.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm drop-shadow-md">
+                        <img src="./assets/conversion-icon.png" alt="">
+                        <h1 class="py-2 font-bold text-2xl text-slate-800">For Conversation</h1>
+                        <p class="text-slate-500">AMP experience on desktop optimized for Conversion</p>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <section class="py-8 px-4 xs:px-8 sm:px-10 lg:px-28 w-full">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <div class="flex-1">
+                    <h1 class="py-8 text-2xl lg:text-5xl lg:w-2/3 lg:leading-snug  text-lexend text-slate-800 font-bold">Why product stories? learn more</h1>
+                    <ul>
+                        <li class="flex flex-row items-start py-2">
+                            <div>
+                                <div class="py-3 pr-4">
+                                    <svg class=" text-2xl" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"><path fill="#3f6745" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m-2 15l-5-5l1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h1 class="text-lg fext-lexend font-bold text-slate-800 py-2">SEO optimized, high Google rank</h1>
+                                <p class="text-slate-500">By converting all your Shopify product pages in AMP format</p>
+                            </div>
+                        </li>
+                        <li class="flex flex-row items-start py-2">
+                            <div>
+                                <div class="py-3 pr-4">
+                                    <svg class=" text-2xl" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"><path fill="#3f6745" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m-2 15l-5-5l1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h1 class="text-lg fext-lexend font-bold text-slate-800 py-2">Fast loading, low bounce rates</h1>
+                                <p class="text-slate-500">AMP is the latest Google technology allowing websites to load at much higher speeds</p>
+                            </div>
+                        </li>
+                        <li class="flex flex-row items-start py-2">
+                            <div>
+                                <div class="py-3 pr-4">
+                                    <svg class=" text-2xl" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"><path fill="#3f6745" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m-2 15l-5-5l1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9Z"/></svg>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h1 class="text-lg fext-lexend font-bold text-slate-800 py-2">Immersive, direct conversion</h1>
+                                <p class="text-slate-500">The story format is already a proven layout for giving users a more interactive.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex-1 py-8 flex flex-col sm:flex-row relative">
+
+                    <!----------Product Sales dashboard ------------>
+
+                    <div class="flex flex-col justify-center items-center gap-4 text-center p-4  bg-white lg:py-8 sm:h-fit sm:self-center sm:flex-1">
+                        <div>
+                            <h1 class="text-2xl font-bold text-slate-800 py-2">$500+</h1>
+                            <p class="text-slate-500 text-sm">Earnings per day</p>
+                        </div>
+                        <div class="w-9/12">
+                            <img src="./assets/orange-half-circle-clipart.svg" class="max-h-16 mx-auto" alt="">
+                        </div>
+                        <div>
+                            <h1 class="text-3xl font-extrabold text-slate-800 py-4">$15,000</h1>
+                            <p class="text-slate-500 text-sm">Earnings per month</p>
+                        </div>
+                    </div>
+
+                    <!-- Product card code goes here ---------->
+
+                    <div class="p-4 bg-[#3F6745] xs:flex xs:flex-row xs:gap-8 xs:place-items-center sm:place-items-baseline sm:block sm:max-w-[16rem]">
+                        <div class="xs:flex-1 rounded-sm">
+                            <img src="./assets/chair-tablet.png" class="aspect-square w-full h-auto rounded-sm">
+                        </div>
+                        <div class="xs:flex-1">
+                            <div class="py-4">
+                                <h1 class="py-2 text-white text-xl xs:text-xl lg:text-2xl font-semibold">Classic Sofa</h1>
+                                <p class="text-slate-200 text-sm py-2">Our popular Mika style is a modern take in the classic button down sofa</p>
+                            </div>
+                            <button class="py-2 px-4 w-full text-center border border-green-200 font-bold text-slate-50 rounded-sm mb-2 hover:bg-green-900 hover:ring-4 hover:ring-green-800 hover:border-transparent">Buy now for $56</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="products" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-28">
+            <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-16 justify-center items-center gap-y-24">
+                <div class="flex-1">
+                    <div class="relative flex flex-col xs:flex-row gap-4 p-4 bg-[#3F6745] my-16 mx-4">
+                        <div class="bg-white flex-1">
+                            <img src="./assets/man-jumping.png" class="w-full h-auto aspect-square object-cover object-center place-self-center">
+                        </div>
+                        <div class="flex-1">
+                            <img src="./assets/chair-tablet.png" class="w-full h-auto">
+                        </div>
+
+                        <!--------Absolutely placed surfaces-->
+
+                        <div class="absolute -top-16 -right-4 bg-white p-2">
+                            <img src="./assets/matrix-image.png" class="aspect-square h-auto w-full object-center object-cover ">
+                        </div>
+
+                        <div id="customers" class="absolute -bottom-16 -left-4">
+                            <div class="flex flex-col items-center p-1 bg-white rounded-sm w-fit">
+                                <span class="p-1 my-2 bg-orange-400 hover:bg-orange-600  transition-colors duration-300 ease-linear rounded-full drop-shadow-sm text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
+                                </span>
+                                <div>
+                                    <h1 class="font-bold font-slate-800 text-sm">31950+</h1>
+                                    <p class="text-sm text-slate-400 text-[10px]">Customers</p>
+                                </div>
+                                <div id="avatars" class="flex flex-row gap-[1px] my-1 text-[9px]">
+                                    <div class="border rounded-full bg-orange-100 hover:bg-orange-400 hover:text-white transition-colors duration-300 ease-linear text-slate-500 p-1">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
+                                        </span>
+                                    </div>
+                                    <div class="border rounded-full bg-orange-100 hover:bg-orange-400 hover:text-white transition-colors duration-300 ease-linear text-slate-500 p-1">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
+                                        </span>
+                                    </div>
+                                    <div class="border rounded-full bg-orange-100 hover:bg-orange-400 hover:text-white transition-colors duration-300 ease-linear text-slate-500 p-1">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
+                                        </span>
+                                    </div>
+                                    <div class="border rounded-full bg-orange-100 hover:bg-orange-400 hover:text-white transition-colors duration-300 ease-linear text-slate-500 p-1">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
+                                        </span>
+                                    </div>
+                                    <div class="border rounded-full bg-white text-bold hover:bg-orange-400 hover:text-white transition-colors duration-300 ease-linear text-slate-500 text-center px-1.5">
+                                        <span>+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <span class="font-md pb-4 text-slate-600">CREATIVE INTELLIGENCE</span>
+                    <h1 class="text-2xl lg:text-4xl font-bold py-4 text-slate-800 font-lexend">Know your Ads inside & out performance</h1>
+                    <p class="text-slate-500">When do I feature my Product? Which spokesperson is my target audience responding to? ow optimize my call to action? Get real-time answers to improve your creative mid-flight. And see what's worked in the past to get intel for your next campaign</p>
+                </div>
+            </div>
+        </section>
+        <footer id="contacts" class="w-full py-8 px-4 xs:px-8 sm:px-10 lg:px-24 mt-4 bg-[#17291B]">
+            <h1 class="text-white text-4xl sm:text-5xl font-bold py-6 lg:py-12 xs:w-2/3">Get intouch with us.</h1>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-8 py-2">
+                <div>
+                    <span class="text-slate-100 py-2">More than 80,000 companies trust our business.</span>
+                </div>
+                <div>
+                    <div id="email-control" class="ring-4 flex bg-white p-1 rounded-sm">
+                        <input id="email" type="email" placeholder="Your business email" class="py-2 px-4 focus:outline-none placeholder-slate-400 placeholder:italic border-none inline-block flex-1 min-w-0">
+                        <button class="px-4 py-2 bg-orange-400 text-white font-md text-sm rounded-sm ">
+                           <span class="hidden xs:inline"> Get Started</span>
+                            <svg class="inline mx-1" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="16" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center py-8">
+                <div>
+                    <img src="./assets/footer-brand.png" alt="">
+                </div>
+                <div class="py-4">
+                    <ul class="flex flex-col xs:flex-row gap-y-2 gap-x-4 text-slate-50">
+                        <li class="cursor-pointer hover:text-slate-400 transition-colors duration-100 ease-in"><a href="#hero">About</a></li>
+                        <li class="cursor-pointer hover:text-slate-400 transition-colors duration-100 ease-in"><a href="#processes">Products</a></li>
+                        <li class="cursor-pointer hover:text-slate-400 transition-colors duration-100 ease-in"><a href="#services">Services</a></li>
+                        <li class="cursor-pointer hover:text-slate-400 transition-colors duration-100 ease-in"><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="py-4">
+                    <ul class="flex flex-row gap-y-2 gap-x-4 text-slate-50 text-2xl">
+                        <li class="cursor-pointer hover:scale-110 transition-transform duration-100 ease-in">
+                            <svg class="text-white fs-4" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                        </li>
+                        <li class="cursor-pointer hover:scale-110 transition-transform duration-100 ease-in">
+                            <svg class="text-white fs-4" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1S717.1 625.5 717.1 512S625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7S645.3 438.6 645.3 512S585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9s47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8c-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1c-18.2-7.3-31.8-16.1-45.8-30.2c-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9c7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2c14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"/></svg>
+                        </li>
+                        <li class="cursor-pointer hover:scale-110 transition-transform duration-100 ease-in">
+                            <svg class="text-white fs-4" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="white" d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149C1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5c58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5c2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9ZM207 353.89v-196.5l145 98.2Z"/></svg>
+                        </li>
+                    </ul>
+                </div>
+                <div></div>
+            </div>
+            <hr class="py-2 border-slate-600">
+            <div class="italic sm:text-center">
+                <span class="text-slate-600 text-sm">Copyright &copy; 2022.Besnik creative.</span>
+            </div>
+        </footer>
+        
+    <script src="./script.js"></script>
+</body>
+</html>
