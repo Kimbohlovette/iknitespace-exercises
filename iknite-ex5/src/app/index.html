@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Kalculator</title>
+</head>
+<body class="container mx-auto bg-slate-200">
+    <h1 class="text-blue-500 text-center font-bold text-2xl mb-4 bg-blue-50 py-4 rounded-br-full">Kalculator</h1>
+
+
+    <div class="pt-4">
+        <hr>
+    </div>
+
+
+    <div class="px-8 py-4 h-40 flex flex-col items-end">
+        <div class="console py-4 text-slate-600">5 + 6 * 6</div>
+        <div class="result text-blue-500 font-bold text-4xl py-2">
+            666
+        </div>
+    </div>
+
+
+    <div class="keyboard grid grid-cols-4 grid-rows-5 rounded-t-3xl py-8 font-medium text-2xl [&>div>*]:place-self-center [&>div>*]:p-4 [&>div>*]:rounded-lg [&>div>*:hover]:bg-blue-300 bg-white">
+        <div class="operators1 col-span-4 grid grid-cols-4 [&>*]:flex-1 text-center font-medium text-blue-500">
+            <div class="operator text-red-500">C</div>
+            <div class="operator">DEL</div>
+            <div class="operato tracking-widest">()</div>
+            <div class="operator">%</div>
+        </div>
+        <div class="col-span-3 row-span-4 numbers grid grid-cols-3">
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="number">8</div>
+            <div class="number">9</div>
+            <div class="number">.</div>
+            <div class="number">0</div>
+            <div class="number">00</div>
+            <div class="w-full text-center bg-blue-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 9.998H5v-2h14zm0 6H5v-2h14z"/></svg>
+            </div>
+        </div>
+        <div class="operators2 col-start-auto row-span-4 grid gri-col-1 text-blue-500">
+            <div><svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M5 11h14v2H5zm7.002-7a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4zm0 12a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4z"/></svg></div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg></div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/></svg></div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998H5v-2h14z"/></svg></div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
