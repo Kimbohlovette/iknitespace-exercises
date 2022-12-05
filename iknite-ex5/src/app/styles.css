@@ -559,8 +559,32 @@ video {
   grid-column-start: auto;
 }
 
+.col-start-5 {
+  grid-column-start: 5;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-end-6 {
+  grid-column-end: 6;
+}
+
+.col-end-4 {
+  grid-column-end: 4;
+}
+
 .row-span-4 {
   grid-row: span 4 / span 4;
+}
+
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-end-4 {
+  grid-row-end: 4;
 }
 
 .mx-auto {
@@ -588,6 +612,14 @@ video {
   width: 100%;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.auto-rows-auto {
+  grid-auto-rows: auto;
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -596,16 +628,48 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-rows-5 {
   grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+
+.grid-rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
   flex-direction: column;
 }
 
+.place-items-center {
+  place-items: center;
+}
+
 .items-end {
   align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.place-self-center {
+  place-self: center;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-t-3xl {
@@ -613,8 +677,17 @@ video {
   border-top-right-radius: 1.5rem;
 }
 
+.rounded-b-3xl {
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
 .rounded-br-full {
   border-bottom-right-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-slate-200 {
@@ -630,6 +703,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .py-4 {
@@ -652,8 +729,17 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -697,6 +783,108 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 640px) {
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-start-5 {
+    grid-column-start: 5;
+  }
+
+  .md\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .md\:col-start-3 {
+    grid-column-start: 3;
+  }
+
+  .md\:col-start-4 {
+    grid-column-start: 4;
+  }
+
+  .md\:col-end-6 {
+    grid-column-end: 6;
+  }
+
+  .md\:col-end-4 {
+    grid-column-end: 4;
+  }
+
+  .md\:col-end-5 {
+    grid-column-end: 5;
+  }
+
+  .md\:row-span-4 {
+    grid-row: span 4 / span 4;
+  }
+
+  .md\:row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .md\:row-start-4 {
+    grid-row-start: 4;
+  }
+
+  .md\:row-start-3 {
+    grid-row-start: 3;
+  }
+
+  .md\:row-end-4 {
+    grid-row-end: 4;
+  }
+
+  .md\:row-end-5 {
+    grid-row-end: 5;
+  }
+
+  .md\:row-end-2 {
+    grid-row-end: 2;
+  }
+
+  .md\:row-end-3 {
+    grid-row-end: 3;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.\[\&\>div\>\*\]\:w-full>div>* {
+  width: 100%;
+}
+
 .\[\&\>div\>\*\]\:place-self-center>div>* {
   place-self: center;
 }
@@ -714,6 +902,56 @@ video {
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
 
+.\[\&\>\*\]\:w-full>* {
+  width: 100%;
+}
+
 .\[\&\>\*\]\:flex-1>* {
   flex: 1 1 0%;
+}
+
+.\[\&div\>\*\]\:place-self-centerdiv>* {
+  place-self: center;
+}
+
+.\[\&div\>\*\]\:rounded-lgdiv>* {
+  border-radius: 0.5rem;
+}
+
+.\[\&div\>\*\]\:p-4div>* {
+  padding: 1rem;
+}
+
+.\[\&div\>\*\]\:text-centerdiv>* {
+  text-align: center;
+}
+
+.\[\&_svg\]\:mx-auto svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.\[\&_svg\]\:text-center svg {
+  text-align: center;
+}
+
+.\[\&svg\]\:text-centersvg {
+  text-align: center;
+}
+
+.\[\&\>svg\]\:text-center>svg {
+  text-align: center;
+}
+
+.\[\&\>divsvg\]\:text-center>divsvg {
+  text-align: center;
+}
+
+.\[\&\>div_svg\]\:mx-auto>div svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.\[\&\>div_svg\]\:text-center>div svg {
+  text-align: center;
 }
