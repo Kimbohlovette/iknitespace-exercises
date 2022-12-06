@@ -10,28 +10,26 @@
 </head>
 <body class="container mx-auto">
     <main class="max-w-3xl mx-auto sm:px-4 pb-4 border bg-slate-200"> 
-        <h1 class="text-blue-500 text-center font-bold text-2xl mb-4 bg-blue-50 py-4 rounded-b-3xl">Kalculator</h1>
-
-        <div class="pt-4">
-            <hr>
-        </div>
+        <h1 class="text-blue-500 text-center font-bold text-2xl mb-4">Kalculator</h1>
     
         <div class="px-8 py-4 h-40 flex flex-col items-end">
-            <div class="console py-4 text-slate-600">5 + 6 * 6</div>
-            <div class="result text-blue-500 font-bold text-4xl py-2">
+            <div id="console" class="console py-4 text-slate-600 font-semibold">5 + 6 * 6</div>
+            <div id="answer" class="answer text-blue-500 font-bold tracking-widest text-4xl py-2">
                 666
             </div>
         </div>
     
-        <div class="keyboard grid grid-cols-4 grid-rows-5 px-4 drop-shadow-xl md:grid-cols-5 md:grid-rows-4 rounded-3xl text-center py-8 bg-white font-medium text-2xl gap-2 [&div>*]:place-self-center [&div>*]:p-4 [&>div>*]:rounded-lg [&>div>*]:p-4 [&>div>*]:w-full [&>div>*:hover]:bg-blue-300 [&_svg]:mx-auto">
+        <div class="keyboard grid grid-cols-4 grid-rows-5 px-4 drop-shadow-xl md:grid-cols-5 md:grid-rows-4 rounded-t-3xl sm:rounded-b-3xl text-center py-8 bg-white font-medium text-2xl gap-2 [&div>*]:place-self-center [&div>*]:p-4 [&>div>*]:rounded-lg [&>div>*]:p-4 [&>div>*]:w-full [&>div>*:hover]:bg-blue-300 [&_svg]:mx-auto">
     
-            <div class="operators1 col-span-4 md:col-start-4 md:col-end-6 grid grid-cols-4 md:grid-cols-2 md:row-start-1 md:row-end-3 [&>*]:flex-1 text-center font-medium text-blue-500">
-                <div class="operator text-red-500">C</div>
-                <div class="operator">DEL</div>
-                <div class="operato tracking-widest">()</div>
-                <div class="operator">%</div>
+            <div class="operators col-span-4 md:col-start-4 md:col-end-6 grid grid-cols-4 md:grid-cols-2 md:row-start-1 md:row-end-3 [&>*]:flex-1 text-center font-medium text-blue-500">
+                <div id="clear" class="operator text-red-500">C</div>
+                <div id="delete" class="operator">DEL</div>
+                <div id="bracket" class="operato tracking-widest">()</div>
+                <div id="plus" class="operator" data-target="+">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-target="+" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/></svg>
+                </div>
             </div>
-            <div class="numbers col-span-3 row-span-4 md:col-start-1 md:col-end-4  md:row-start-1 md:row-end-5 grid grid-cols-3 ">
+            <div id="numbers" class="numbers col-span-3 row-span-4 md:col-start-1 md:col-end-4  md:row-start-1 md:row-end-5 grid grid-cols-3">
                 <div class="number">1</div>
                 <div class="number">2</div>
                 <div class="number">3</div>
@@ -43,23 +41,30 @@
                 <div class="number">.</div>
                 <div class="number">0</div>
                 <div class="number">00</div>
-                <div class="w-full text-center bg-blue-50">
-                    <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 9.998H5v-2h14zm0 6H5v-2h14z"/></svg>
+
+                <div id="equalto" class="w-full text-center bg-blue-50" data-target="=">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-target="=" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 9.998H5v-2h14zm0 6H5v-2h14z" /></svg>
                 </div>
+                
             </div>
-            <div class="operators2 col-start-auto row-span-4 md:col-start-4 md:col-end-6 md:row-start-3 md:row-end-5 grid grid-cols-1 md:grid-cols-2 text-blue-500">
-                <div><svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M5 11h14v2H5zm7.002-7a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4zm0 12a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4z"/></svg></div>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg></div>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/></svg></div>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998H5v-2h14z"/></svg></div>
+            <div class="operators col-start-auto row-span-4 md:col-start-4 md:col-end-6 md:row-start-3 md:row-end-5 grid grid-cols-1 md:grid-cols-2 text-blue-500">
+                <div data-target="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-target="/" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M5 11h14v2H5zm7.002-7a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4zm0 12a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4z"/></svg>
+                </div>
+                <div data-target="*">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-target="*" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg>
+                </div>
+                <div data-target="%">
+                    %
+                </div>
+                <div data-target="-">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-target="-" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998H5v-2h14z"/></svg>
+                </div>
             </div>
     
         </div>
     
     </main>
-
+    <script src="./scripts.js"></script>
 </body>
 </html>
