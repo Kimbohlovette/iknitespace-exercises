@@ -7,38 +7,23 @@ const bracketEl = document.getElementById('bracket')
 const shiftBtnEl = document.getElementById('shift-btn')
 const shiftEl = document.getElementById('shift')
 const deleteEl = document.getElementById('delete')
-const memoryEl = document.getElementById('memory')
 
 
 const clearEl = document.getElementById('clear')
 const answerEl = document.getElementById('answer')
 
-// On init, bring the keyboard input field to focus
 
-memoryEl.focus()
 
 // Get key presses
 
-memoryEl.addEventListener('keypress',(e)=>{
+document.addEventListener('keypress',(e)=>{
     if(!e.code.startsWith('Key')){
         consoleEl.innerText = consoleEl.innerText + e.key
         //console.log(e.key + " " + e.code)
     }
 })
 
-// Keep the keyboard input field focus
-
-memoryEl.addEventListener('blur', ()=>{
-    memoryEl.focus()
-})
-
-
 var isShift = false
-
-
-
-
-
 
 // toggle shift button
 
