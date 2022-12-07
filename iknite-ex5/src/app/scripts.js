@@ -34,7 +34,6 @@ numbersEl.addEventListener('click', (event)=>{
 clearEl.addEventListener('click', ()=>{
     consoleEl.innerText = "0"
     answerEl.innerText = ""
-    toggleShift()
     
 })
 
