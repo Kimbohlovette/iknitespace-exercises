@@ -10,60 +10,60 @@
 </head>
 <body class="container mx-auto">
     <main class="max-w-3xl mx-auto px-1 sm:px-4 my-1 border bg-slate-200 select-none rounded-lg max-h-[100vh] sm:py-8"> 
-        <div class="px-8 py-4 h-36 flex flex-col items-end relative border border-gray-400 rounded-3xl my-2">
-            <div id="shift" class="hidden absolute top-0 left-3/4 text-xs bg-slate-50 p-1 rounded-lg my-1">shift</div>
-            <div id="memory" class="hidden absolute top-0 right-3/4 text-xs bg-slate-50 p-1 rounded-lg my-1">M</div>
+        <div class="bg-slate-50 px-8 py-4 h-36 flex flex-col items-end relative border border-gray-400 rounded-3xl my-2">
+            <div id="shift" class="hidden absolute top-0 left-3/4 text-xs text-slate-600 p-1 rounded-lg my-1">shift</div>
+            <div id="memory" class="hidden absolute top-0 right-3/4 text-xs text-slate-600 p-1 rounded-lg my-1">M</div>
 
-            <div id="console" class="console py-4 text-slate-600 font-semibold"></div>
-            <div id="answer" class="answer text-blue-500 font-bold tracking-widest text-xl sm:text-4xl py-2"></div>
+            <div id="console" class="console py-4 text-slate-400 text-xl sm:text-2xl font-semibold"></div>
+            <div id="answer" class="answer text-blue-500 font-bold tracking-widest text-3xl sm:text-4xl py-2"></div>
         </div>
         <div class="rounded-t-3xl sm:rounded-b-3xl py-4 bg-white font-medium text-2xl px-4 w-full">
             <div class="w-full py-4 flex justify-center sm:justify-end flex-wrap sm:pr-14 gap-4">
                 
-                <button id="return-mem" class="px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">MR</button>
-                <button id="clear-mem" class="px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">MC</button>
-                <button id="add-mem" class="px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">M+</button>
-                <button id="sub-mem" class="px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">M-</button>
-                <button id="shift-btn" class="px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">SHIFT</button>
+                <button id="return-mem" class="px-4 py-1 text-sm focus:bg-blue-400 focus:text-slate-800 bg-blue-200 text-slate-600 rounded-full">MR</button>
+                <button id="clear-mem" class="px-4 py-1 text-sm focus:bg-blue-400 focus:text-slate-800 bg-blue-200 text-slate-600 rounded-full">MC</button>
+                <button id="add-mem" class="px-4 py-1 text-sm focus:bg-blue-400 focus:text-slate-800 bg-blue-200 text-slate-600 rounded-full">M+</button>
+                <button id="sub-mem" class="px-4 py-1 text-sm focus:bg-blue-400 focus:text-slate-800 bg-blue-200 text-slate-600 rounded-full">M-</button>
+                <button id="shift-btn" class="px-4 py-1 text-sm focus:bg-blue-400 focus:text-slate-800 bg-blue-200 text-slate-600 rounded-full">SHIFT</button>
             </div>
-            <div class="keyboard grid grid-cols-4 grid-rows-5 text-center drop-shadow-xl md:grid-cols-5 md:grid-rows-4 gap-2 [&div>*]:place-self-center [&div>*]:p-4 [&>div>*]:rounded-lg [&>div>*]:p-4 [&>div>*]:w-full [&>div>*:hover]:bg-blue-300 [&_svg]:mx-auto">
+            <div class="keyboard grid grid-cols-4 grid-rows-5 text-center drop-shadow-xl md:grid-cols-5 md:grid-rows-4 gap-2 [&div>*]:place-self-center [&div>*]:p-2 sm:[&>div>*:hover]:bg-blue-50 [&>div>*]:rounded-lg [&>div>*]:p-4 [&_svg]:mx-auto">
     
                 <div class="operators col-span-4 md:col-start-4 md:col-end-6 grid grid-cols-4 md:grid-cols-2 md:row-start-1 md:row-end-3 [&>*]:flex-1 text-center font-medium text-blue-500">
-                    <div id="clear" class="text-red-500" data-target="c">C</div>
-                    <div id="delete" data-target="DEL"><svg data-target="DEL" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="DEL" fill="currentColor" d="M10.05 16.94v-4h8.92l.03-2.01h-8.95V6.94l-5 5Z"/></svg></div>
-                    <div id="bracket" class="tracking-widest" data-target="(" data-bracketclose=")" >(</div>
-                    <div id="plus" class="operator" data-target="+">
+                    <div id="clear" class="text-red-500" data-target="c" tabindex="0">C</div>
+                    <div id="delete" data-target="DEL" tabindex="0"><svg data-target="DEL" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="DEL" fill="currentColor" d="M10.05 16.94v-4h8.92l.03-2.01h-8.95V6.94l-5 5Z"/></svg></div>
+                    <div id="bracket" class="tracking-widest" data-target="(" data-bracketclose=")" tabindex="0">(</div>
+                    <div id="plus" class="operator" data-target="+" tabindex="0">
                         <svg xmlns="http://www.w3.org/2000/svg" data-target="+" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="+" fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/></svg>
                     </div>
                 </div>
                 <div id="numbers" class="numbers col-span-3 row-span-4 md:col-start-1 md:col-end-4  md:row-start-1 md:row-end-5 grid grid-cols-3">
-                    <div class="number" data-target="1">1</div>
-                    <div class="number" data-target="2">2</div>
-                    <div class="number" data-target="3">3</div>
-                    <div class="number" data-target="4">4</div>
-                    <div class="number" data-target="5">5</div>
-                    <div class="number" data-target="6">6</div>
-                    <div class="number" data-target="7">7</div>
-                    <div class="number" data-target="8">8</div>
-                    <div class="number" data-target="9">9</div>
-                    <div class="number" data-target="0">0</div>
-                    <div class="number" data-target=".">.</div>
-                    <div id="equalto" class="w-full text-center bg-blue-50" data-target="=">
+                    <div class="number" data-target="1" tabindex="0">1</div>
+                    <div class="number" data-target="2" tabindex="0">2</div>
+                    <div class="number" data-target="3" tabindex="0">3</div>
+                    <div class="number" data-target="4" tabindex="0">4</div>
+                    <div class="number" data-target="5" tabindex="0">5</div>
+                    <div class="number" data-target="6" tabindex="0">6</div>
+                    <div class="number" data-target="7" tabindex="0">7</div>
+                    <div class="number" data-target="8" tabindex="0">8</div>
+                    <div class="number" data-target="9" tabindex="0">9</div>
+                    <div class="number" data-target="0" tabindex="0">0</div>
+                    <div class="number" data-target="." tabindex="0">.</div>
+                    <div id="equalto" class="w-full text-center" data-target="=" tabindex="0">
                         <svg xmlns="http://www.w3.org/2000/svg" data-target="=" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="=" fill="currentColor" d="M19 9.998H5v-2h14zm0 6H5v-2h14z" /></svg>
                     </div>
     
                 </div>
                 <div class="operators col-start-auto row-span-4 md:col-start-4 md:col-end-6 md:row-start-3 md:row-end-5 grid grid-cols-1 md:grid-cols-2 text-blue-500">
-                    <div class="operator" data-target="/">
+                    <div class="operator" data-target="/" tabindex="0">
                         <svg xmlns="http://www.w3.org/2000/svg" data-target="/" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="/" fill="currentColor" d="M5 11h14v2H5zm7.002-7a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4zm0 12a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4z"/></svg>
                     </div>
-                    <div class="operator z-20" data-target="x">
+                    <div class="operator" data-target="x" tabindex="0">
                         <svg xmlns="http://www.w3.org/2000/svg" data-target="x" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="x" fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg>
                     </div>
-                    <div class="operator" data-target="%">
+                    <div class="operator" data-target="%" tabindex="0">
                         <svg data-target="%" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="%" fill="currentColor" d="m18.5 3.5l-15 15l2 2l15-15M7 4a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m10 10a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg>
                     </div>
-                    <div class="operator" data-target="-">
+                    <div class="operator" data-target="-" tabindex="0">
                         <svg xmlns="http://www.w3.org/2000/svg" data-target="-" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="-" fill="currentColor" d="M19 12.998H5v-2h14z"/></svg>
                     </div>
                 </div>
