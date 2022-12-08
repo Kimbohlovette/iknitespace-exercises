@@ -161,6 +161,7 @@ function addToMemory(){
 
 function returnFromMemory(){
     let storedValue = JSON.parse(localStorage.getItem('value'))
+    if(!storedValue) return
     consoleEl.innerText = consoleEl.innerText + parseFloat(storedValue)
 }
 
