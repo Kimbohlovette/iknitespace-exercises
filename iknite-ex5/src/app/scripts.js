@@ -12,7 +12,6 @@ const addMemBtn = document.getElementById('add-mem')
 const subMemBtn = document.getElementById('sub-mem')
 const clearMemBtn = document.getElementById('clear-mem')
 const memoryIndicatorEl = document.getElementById('memory')
-
 const clearEl = document.getElementById('clear')
 const answerEl = document.getElementById('answer')
 
@@ -20,19 +19,16 @@ const answerEl = document.getElementById('answer')
 
 // Get key presses
 
-document.addEventListener('keypress',(e)=>{
+document.addEventListener('keypress',(event)=>{
 
     // Return expression result when enter is pressed
-    if(e.code==="Enter"){
+    if(event.code==="Enter"){
         evaluateMemoryExp()
         return
     }
 
-    if(e.key==="Delete"){
-        console.log(e.key)
-    }
-    if(!e.code.startsWith('Key')){
-        consoleEl.innerText = consoleEl.innerText + e.key
+    if(!event.code.startsWith('Key')){
+        updateConsole(event.key)
         //console.log(e.key + " " + e.code)
     }
 })
@@ -51,20 +47,17 @@ if(memory){
 
 // toggle shift button
 
-
 shiftBtnEl.addEventListener('click',()=> { 
     toggleShift()
 })
-
 
 numbersEl.addEventListener('click', (event)=>{
     if(event.target.classList.contains('number')){
         //console.log(event.target.innerText)
         let number = event.target.dataset.target
-        consoleEl.innerText = consoleEl.innerText + number
+        updateConsole(number)
     }
 })
-
 
 clearEl.addEventListener('click', ()=>{
     consoleEl.innerText = ""
@@ -76,7 +69,7 @@ for(const operators of operatorsEl){
     operators.addEventListener('click', (event)=>{
         let operator = event.target.dataset.target
         //console.log(operator)
-        consoleEl.innerText = consoleEl.innerText + operator
+        updateConsole(operator)
 
     })
 }
@@ -85,14 +78,13 @@ equalToEl.addEventListener('click', ()=>{
     evaluateMemoryExp()
 })
 
-
 bracketEl.addEventListener('click', (event)=>{
     const openBracket = event.target.dataset.target
     const closeBracket = event.target.dataset.bracketclose
     if(isShift){
-        consoleEl.innerText = consoleEl.innerText + closeBracket
+        updateConsole(closeBracket) 
     }else{
-        consoleEl.innerText = consoleEl.innerText + openBracket
+        updateConsole(openBracket)
     }
     
 })
@@ -122,6 +114,16 @@ clearMemBtn.addEventListener('click', ()=>{
 
 
 // HELPER FUNCTIONS
+
+function updateConsole(value){
+    if(value==="*"){
+        consoleEl.innerText = consoleEl.innerText + "x"
+    }
+
+    else{
+        consoleEl.innerText = consoleEl.innerText + value
+    }
+}
 
 function toggleShift(){
     isShift = !isShift
@@ -182,14 +184,12 @@ function addToMemory(){
         localStorage.setItem("value",JSON.stringify(memory))
         addMemoryIndicator()
     }
-
-
 }
 
 function returnFromMemory(){
     let storedValue = JSON.parse(localStorage.getItem('value'))
     if(!storedValue) return
-    consoleEl.innerText = consoleEl.innerText + parseFloat(storedValue)
+    updateConsole(parseFloat(storedValue))
 }
 
 function subscractFromMemory(){
