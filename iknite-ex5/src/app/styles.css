@@ -563,6 +563,10 @@ video {
   left: 75%;
 }
 
+.right-3\/4 {
+  right: 75%;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -598,6 +602,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -624,6 +632,10 @@ video {
 
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.flex-none {
+  flex: none;
 }
 
 .select-none {

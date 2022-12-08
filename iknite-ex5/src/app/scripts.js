@@ -10,6 +10,8 @@ const deleteEl = document.getElementById('delete')
 const returnMemBtn = document.getElementById('return-mem')
 const addMemBtn = document.getElementById('add-mem')
 const subMemBtn = document.getElementById('sub-mem')
+const clearMemBtn = document.getElementById('clear-mem')
+const memoryIndicatorEl = document.getElementById('memory')
 
 const clearEl = document.getElementById('clear')
 const answerEl = document.getElementById('answer')
@@ -35,7 +37,17 @@ document.addEventListener('keypress',(e)=>{
     }
 })
 
+// flags
+
 var isShift = false
+var isDirty = false
+
+// Indicate if there is a value in memory
+
+let memory = JSON.parse(localStorage.getItem("value"))
+if(memory){
+    addMemoryIndicator()
+}
 
 // toggle shift button
 
@@ -104,6 +116,10 @@ returnMemBtn.addEventListener('click',()=>{
    returnFromMemory() 
 })
 
+clearMemBtn.addEventListener('click', ()=>{
+    clearMemory()
+})
+
 
 // HELPER FUNCTIONS
 
@@ -126,6 +142,16 @@ function evaluateMemoryExp(){
     .split('')
     if(expression[0]==="0"){
         expression[0]=""
+    }
+
+    for( const c in expression){
+        if(expression[c].toLowerCase()==='x'){
+            expression[c] = '*'
+        }
+
+        if(expression[c]==='('&& isNumeric(expression[c-1])){
+            expression[c] = "*("
+        }
     }
 
     let answer = ""
@@ -154,6 +180,7 @@ function addToMemory(){
     }
     else{
         localStorage.setItem("value",JSON.stringify(memory))
+        addMemoryIndicator()
     }
 
 
@@ -170,4 +197,23 @@ function subscractFromMemory(){
     if(!substracter) return
     let storedValue = JSON.parse(localStorage.getItem('value'))
     localStorage.setItem("value", JSON.stringify(parseFloat(storedValue)- parseFloat(substracter)))
+}
+
+function clearMemory(){
+    localStorage.setItem("value", JSON.stringify(""))
+    removeMemoryIndicator()
+}
+
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+  }
+
+function removeMemoryIndicator(){
+    memoryIndicatorEl.classList.add('hidden')
+    isDirty = false
+}
+
+function addMemoryIndicator(){
+    memoryIndicatorEl.classList.remove('hidden')
+    isDirty = true
 }

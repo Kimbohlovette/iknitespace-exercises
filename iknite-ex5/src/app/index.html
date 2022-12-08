@@ -12,6 +12,7 @@
     <main class="max-w-3xl mx-auto px-1 sm:px-4 my-1 border bg-slate-200 select-none rounded-lg max-h-[100vh] sm:py-8"> 
         <div class="px-8 py-4 h-36 flex flex-col items-end relative border border-gray-400 rounded-3xl my-2">
             <div id="shift" class="hidden absolute top-0 left-3/4 text-xs bg-slate-50 p-1 rounded-lg my-1">shift</div>
+            <div id="memory" class="hidden absolute top-0 right-3/4 text-xs bg-slate-50 p-1 rounded-lg my-1">M</div>
 
             <div id="console" class="console py-4 text-slate-600 font-semibold"></div>
             <div id="answer" class="answer text-blue-500 font-bold tracking-widest text-xl sm:text-4xl py-2"></div>
@@ -19,10 +20,11 @@
         <div class="rounded-t-3xl sm:rounded-b-3xl py-4 bg-white font-medium text-2xl px-4 w-full">
             <div class="w-full py-4 flex justify-center sm:justify-end flex-wrap sm:pr-14 gap-4">
                 
-                <button id="return-mem" class="shift px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">MR</button>
-                <button id="add-mem" class="shift px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">M+</button>
-                <button id="sub-mem" class="shift px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">M-</button>
-                <button id="shift-btn" class="shift px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">SHIFT</button>
+                <button id="return-mem" class="px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">MR</button>
+                <button id="clear-mem" class="px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">MC</button>
+                <button id="add-mem" class="px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">M+</button>
+                <button id="sub-mem" class="px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">M-</button>
+                <button id="shift-btn" class="px-4 py-1 text-sm focus:bg-blue-500 focus:text-slate-800 bg-blue-200 text-slate-500 rounded-full">SHIFT</button>
             </div>
             <div class="keyboard grid grid-cols-4 grid-rows-5 text-center drop-shadow-xl md:grid-cols-5 md:grid-rows-4 gap-2 [&div>*]:place-self-center [&div>*]:p-4 [&>div>*]:rounded-lg [&>div>*]:p-4 [&>div>*]:w-full [&>div>*:hover]:bg-blue-300 [&_svg]:mx-auto">
     
@@ -55,8 +57,8 @@
                     <div class="operator" data-target="/">
                         <svg xmlns="http://www.w3.org/2000/svg" data-target="/" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="/" fill="currentColor" d="M5 11h14v2H5zm7.002-7a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4zm0 12a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4z"/></svg>
                     </div>
-                    <div class="operator z-20" data-target="*">
-                        <svg xmlns="http://www.w3.org/2000/svg" data-target="*" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="*" fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg>
+                    <div class="operator z-20" data-target="x">
+                        <svg xmlns="http://www.w3.org/2000/svg" data-target="x" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="x" fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg>
                     </div>
                     <div class="operator" data-target="%">
                         <svg data-target="%" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path data-target="%" fill="currentColor" d="m18.5 3.5l-15 15l2 2l15-15M7 4a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m10 10a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg>
