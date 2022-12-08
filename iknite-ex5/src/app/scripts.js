@@ -82,9 +82,11 @@ bracketEl.addEventListener('click', (event)=>{
     const openBracket = event.target.dataset.target
     const closeBracket = event.target.dataset.bracketclose
     if(isShift){
-        updateConsole(closeBracket) 
+        updateConsole(closeBracket)
+        bracketEl.innerText = ")"
     }else{
         updateConsole(openBracket)
+        bracketEl.innerText = "("
     }
     
 })
@@ -128,6 +130,12 @@ function updateConsole(value){
 function toggleShift(){
     isShift = !isShift
     shiftEl.classList.toggle('hidden')
+    if(!isShift){
+        bracketEl.innerText = "("
+    }
+    else{
+        bracketEl.innerText = ")"
+    }
 }
 
 
