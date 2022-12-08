@@ -182,8 +182,10 @@ function evaluateMemoryExp(){
 
 function addToMemory(){
     let memory = answerEl.innerText
-    if(!memory) return
+    if(!memory || isNaN(memory) || memory===undefined) return
+    
     let storedValue = JSON.parse(localStorage.getItem("value"))
+
     if(storedValue){
         let value = parseFloat(storedValue) + parseFloat(memory)
         localStorage.setItem("value", JSON.stringify(value))
